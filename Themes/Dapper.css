@@ -1,32 +1,34 @@
 meta {
   -theme-display-name: "Dapper";
   -theme-interface-style: dark;
-  -theme-vibrancy: vibrant;
+  -theme-vibrancy: unset;
   -theme-accent-color: auto;
 }
 
 /* Window styles */
 
 meta.window {
-  border-color: hsla(0, 0%, 30%, 0);
+  border-color: hsla(0, 0%, 7%, 1);
+  background-color: hsla(0, 0%, 16%, 1);
 }
 
 meta.titlebar {
-  color: hsl(240, 19%, 78%);
-  border-color: hsla(0, 0%, 50%, 0);
+  color: hsl(0, 0%, 78%);
+  background-color: hsla(0, 0%, 22%, 1);
+  border-color: hsla(0, 0%, 12%, 0);
 }
 
 meta.titlebar.inactive {
 }
 
 meta.button {
-  background: linear-gradient(hsl(240, 7%, 34%), hsl(240, 7%, 27%));
-  border: linear-gradient(hsl(240, 7%, 19%), hsl(240, 7%, 15%));
-  color: white;
+  background: hsla(348, 0%, 20%, 1);
+  color: hsla(348, 0%, 92%, 1);
+  border: hsla(348, 0%, 20%, 1);
 }
 
 meta.button.highlighted {
-  background: linear-gradient(hsl(240, 7%, 44%), hsl(240, 7%, 44%));
+  background: hsla(348, 0%, 23%, 1);
   color: white;
 }
 
@@ -37,24 +39,28 @@ meta.button.selected {
 meta.button.highlighted.selected {
   color: white;
 }
+
 meta.button.disabled {
+  background: hsla(348, 0%, 20%, 0.4);
+  color: hsla(348, 0%, 92%, 0.4);
+  border: hsla(348, 0%, 20%, 0.4);
 }
 
 meta.textfield {
-  background-color: hsl(240, 7%, 15%);
+  background-color: hsla(210, 2%, 18%, 0);
   border-color: hsl(240, 7%, 24%);
 }
 
 meta.textfield.highlighted {
-  background-color: hsl(240, 7%, 12%);
+  background-color: hsla(240, 7%, 12%, 0);
   border-color: hsl(240, 7%, 24%);
 }
 
 /* Document styles */
 
 meta.document {
-  background-color: hsl(240, 7%, 13%);
-  border-color: hsla(0, 0%, 100%, 0.1);
+  background-color: hsla(204, 16%, 11%, 1);
+  border-color: hsla(0, 0%, 25%, 1);
 }
 
 meta.document.button {
@@ -71,7 +77,7 @@ meta.document.button.highlighted {
 }
 
 meta.document.textfield {
-  background-color: hsl(240, 7%, 12%);
+  background-color: hsla(240, 7%, 12%, 0);
   border-color: hsl(240, 7%, 21%);
 }
 
@@ -83,14 +89,15 @@ meta.document.textfield.highlighted {
 /* Text */
 
 meta.text {
-  color: hsl(60, 0%, 69%);
+  color: hsla(210, 24%, 77%, 1);
 }
 
 meta.text.invisible {
-  color: hsl(214, 16%, 31%);
+  color: hsl(0, 0%, 27%);
 }
 
 meta.text.selected {
+  background-color: hsla(207, 17%, 20%, 1);
 }
 
 /* Cursor */
@@ -102,29 +109,29 @@ meta.cursor {
 /* Indentation Guides */
 
 meta.indentguide {
-  border-color: hsla(240, 0%, 20%, 0.6);
+  border-color: hsla(207, 17%, 14%, 1);
 }
 
 /* Gutter */
 
 meta.gutter {
-  color: hsla(0, 0%, 25%, 0.6);
+  color: hsla(207, 10%, 22%, 1);
 }
 
 meta.gutter.selected {
   background-color: hsla(0, 0%, 0%, 0);
-  color: hsl(0, 0%, 60%);
+  color: hsla(207, 12%, 38%, 1);
 }
 
 /* Syntax styles */
 
 keyword {
-  color: hsl(0, 57%, 56%);
+  color: hsla(186, 41%, 40%, 1);
   font-weight: bold;
 }
 
 comment {
-  color: hsl(60, 0%, 40%);
+  color: hsla(211, 15%, 31%, 1);
 }
 
 processing {
@@ -136,11 +143,11 @@ declaration {
 }
 
 bracket {
-  color: hsl(60, 0%, 69%);
+  color: hsla(209, 17%, 54%, 1);
 }
 
 operator {
-  color: hsl(60, 0%, 69%);
+  color: hsla(205, 92%, 72%, 1);
 }
 
 invalid {
@@ -155,7 +162,7 @@ link {
 /* Values */
 
 value.boolean {
-  color: hsl(0, 57%, 56%);
+  color: hsla(351, 49%, 67%, 1);
   font-weight: bold;
 }
 
@@ -165,11 +172,11 @@ value.null {
 }
 
 value.number {
-  color: hsl(38, 87%, 54%);
+  color: hsla(351, 49%, 67%, 1);
 }
 
 value.entity {
-  color: hsl(242, 35%, 67%);
+  color: hsla(35, 62%, 71%, 1);
 }
 
 value.symbol {
@@ -194,7 +201,7 @@ identifier.property,
 identifier.decorator,
 identifier.function,
 identifier.method {
-  color: hsl(206, 35%, 53%);
+  color: hsla(183, 72%, 67%, 1);
 }
 
 identifier.key {
@@ -202,13 +209,13 @@ identifier.key {
 }
 
 identifier.argument {
-  color: hsl(242, 35%, 67%);
+  color: hsla(34, 72%, 71%, 1);
 }
 
 /* Strings */
 
 string {
-  color: hsl(349, 71%, 72%);
+  color: hsla(215, 81%, 67%, 1);
 }
 
 string.key {
@@ -224,7 +231,7 @@ string-template.value {
 }
 
 regex {
-  color: hsl(38, 87%, 54%);
+  color: hsla(351, 63%, 69%, 1);
 }
 
 regex.escaped {
@@ -293,7 +300,7 @@ definition.method method.name {
 /* Tags */
 
 tag {
-  color: hsl(195, 50%, 50%);
+  color: hsla(183, 97%, 29%, 1);
 }
 
 tag.framework {
@@ -301,15 +308,15 @@ tag.framework {
 }
 
 tag.attribute.name {
-  color: hsl(194, 100%, 68%);
+  color: hsla(183, 67%, 52%, 1);
 }
 
 tag.attribute.value {
-  color: hsl(5, 96%, 68%);
+  color: hsla(215, 81%, 67%, 1);
 }
 
 tag.attribute.value.link {
-  color: hsl(5, 96%, 68%);
+  color: hsla(215, 81%, 67%, 1);
 }
 
 /* Styles */

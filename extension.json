@@ -1,8 +1,8 @@
 {
-  "identifier": "org.dapper",
+  "identifier": "com.dapper",
   "name": "Dapper",
   "organization": "Tim Kaechle",
   "description": "A dark theme for Nova.",
-  "version": "0.1",
+  "version": "1.0",
   "categories": ["themes"]
 }
