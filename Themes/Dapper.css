@@ -8,14 +8,14 @@ meta {
 /* Window styles */
 
 meta.window {
-  border-color: hsla(0, 0%, 8%, 1);
-  background-color: hsla(0, 0%, 14%, 1);
+  border-color: hsla(0, 0%, 23%, 1);
+  background-color: hsla(0, 0%, 17%, 1);
 }
 
 meta.titlebar {
-  color: hsl(0, 0%, 78%);
-  background-color: hsla(0, 0%, 18%, 1);
-  border-color: hsla(0, 0%, 17%, 0);
+  color: hsl(0, 0%, 88%);
+  background-color: hsla(0, 0%, 23%, 1);
+  border-color: hsla(0, 0%, 17%, 1);
 }
 
 meta.titlebar.inactive {
@@ -59,8 +59,8 @@ meta.textfield.highlighted {
 /* Document styles */
 
 meta.document {
-  background-color: hsla(200, 0%, 9%, 1);
-  border-color: hsla(0, 0%, 24%, 1);
+  background-color: hsl(61, 2%, 12%);
+  border-color: hsla(61, 2%, 16%, 1);
 }
 
 meta.document.button {

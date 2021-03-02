@@ -4,5 +4,6 @@
   "organization": "Tim Kaechle",
   "description": "A dark theme for Nova.",
   "version": "0.7",
-  "categories": ["themes"]
+  "categories": ["themes"],
+  "bugs": "None"
 }
