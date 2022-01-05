@@ -1,0 +1,68 @@
+meta {
+  -theme-display-name: "Aventurança Light";
+  -theme-interface-style: light;
+  -theme-vibrancy: none;
+  -theme-accent-color: auto;
+}
+
+meta.titlebar {
+  color: hsl(240, 1%, 29%);
+  background-color: hsla(0, 0%, 99%, 1);
+  border-color: hsla(0, 0%, 87%, 1);
+}
+
+meta.titlebar.inactive {
+  color: hsl(270, 1%, 67%);
+  background-color: hsl(0, 0%, 91%);
+  border-color: hsla(210, 1%, 73%, 1);
+}
+
+meta.window {
+  background-color: hsla(0, 0%, 93%, 1);
+  border-color: hsla(0, 0%, 83%, 1);
+}
+
+meta.button {
+  background: hsla(0, 0%, 100%, 1);
+  color: hsla(0, 0%, 15%, 1);
+  border: hsla(0, 0%, 71%, 1);
+}
+
+meta.button.highlighted {
+  background: hsla(0, 0%, 93%, 1);
+  color: hsla(0, 0%, 15%, 1);
+  border: hsla(0, 0%, 71%, 1);
+}
+
+meta.button.selected {
+  background: hsl(0, 0%, 91%);
+  color: hsla(177, 0%, 100%, 1);
+  border: hsla(177, 1%, 59%, 0);
+}
+
+meta.button.highlighted.selected {
+  color: white;
+}
+
+meta.button.disabled {
+  background: hsla(177, 0%, 59%, 0.2);
+  color: hsla(177, 0%, 62%, 1);
+  border: hsla(177, 1%, 72%, 1);
+}
+
+meta.textfield {
+  background-color: hsla(0, 0%, 100%, 1);
+  border-color: hsla(300, 1%, 86%, 1);
+}
+
+meta.textfield.highlighted {
+  background-color: hsla(240, 7%, 12%, 0);
+  border-color: hsl(177, 1%, 64%);
+}
+
+meta.document.button,
+meta.document.button.disabled,
+meta.document.button.highlighted,
+meta.document.textfield,
+meta.document.textfield.highlighted {
+}

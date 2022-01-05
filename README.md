@@ -1,3 +1,3 @@
-# Dapper
+# Aventurança
 
-A dark theme for Nova. Window theme inspired by macOS, syntax theme inspired by [City Lights](http://citylights.xyz).
+A theme fit for paradise. Inspired by the vivid hues of island sunsets on sandy beaches.

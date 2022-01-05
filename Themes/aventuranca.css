@@ -1,0 +1,781 @@
+meta {
+  -theme-display-name: "Aventurança";
+  -theme-interface-style: dark;
+  -theme-vibrancy: none;
+  -theme-accent-color: auto;
+}
+
+/* Window Styles */
+
+meta.titlebar {
+  color: hsl(0, 0%, 92%);
+  background-color: hsla(0, 0%, 21%, 1);
+  border-color: hsl(0, 0%, 15%);
+}
+
+meta.window {
+  background-color: hsl(0, 0%, 15%);
+  border-color: hsl(0, 0%, 10%);
+}
+
+meta.button {
+  background: hsl(0, 0%, 36%);
+  border: hsl(0, 0%, 44%);
+  color: hsl(0, 0%, 90%);
+}
+
+meta.button.highlighted {
+  background: hsl(0, 0%, 46%);
+  border: hsl(0, 0%, 44%);
+  color: hsl(0, 0%, 90%);
+}
+
+meta.button.selected {
+  background: hsl(0, 0%, 46%);
+  border: hsla(0, 0%, 44%, 0);
+  color: hsla(0, 0%, 92%, 1);
+}
+
+meta.button.highlighted.selected {
+  color: #fff;
+}
+
+meta.textfield,
+meta.textfield.highlighted {
+  background-color: hsl(0, 0%, 19%);
+  border-color: hsl(0, 0%, 26%);
+}
+
+/* Document styles */
+
+meta.document {
+  background-color: hsla(208, 36%, 10%, 1);
+  border-color: hsla(0, 0%, 0%, 0);
+}
+
+meta.document.button,
+meta.document.button.disabled,
+meta.document.button.highlighted,
+meta.document.textfield,
+meta.document.textfield.highlighted {
+}
+
+/* Text */
+
+meta.text {
+  color: hsla(63, 10%, 85%, 1);
+}
+
+meta.text.invisible {
+  color: hsla(208, 36%, 10%, 1);
+}
+
+meta.cursor {
+  background-color: hsla(208, 30%, 12%, 1);
+}
+
+/* Indentation Guides */
+
+meta.indentguide {
+  border-color: hsla(208, 32%, 14%, 1);
+}
+
+meta.gutter {
+  color: hsla(208, 24%, 20%, 1);
+}
+
+meta.gutter.selected {
+  background-color: hsla(235, 15%, 50%, 0);
+  color: hsla(208, 14%, 40%, 1);
+}
+
+/* Syntax styles */
+
+keyword {
+  color: rgba(184, 119, 219, 0.9);
+}
+
+comment {
+  font-style: italic;
+  color: hsla(36, 5%, 29%, 1);
+}
+
+processing {
+  color: rgba(108, 110, 146, 0.75);
+}
+
+declaration {
+  color: hsla(343, 52%, 40%, 1);
+}
+
+bracket,
+operator {
+  color: hsla(63, 10%, 85%, 1);
+}
+
+invalid {
+  background-color: hsla(343, 52%, 40%, 1);
+  color: hsl(60, 33%, 96%);
+}
+
+/* Values */
+
+value.boolean,
+value.number,
+value.null,
+value.symbol,
+value.entity {
+  color: rgba(240, 148, 131, 0.9);
+}
+
+/* Identifiers */
+
+identifier.type,
+identifier.constant {
+  color: rgba(250, 194, 154, 0.9);
+}
+
+identifier.global,
+identifier.variable {
+  color: hsla(344, 57%, 54%, 1);
+}
+
+identifier.property,
+identifier.decorator,
+identifier.function,
+identifier.method {
+  color: hsla(192, 67%, 44%, 1);
+}
+
+identifier.key {
+  color: rgba(184, 119, 219, 0.9);
+}
+
+identifier.argument {
+  font-style: italic;
+  color: hsla(344, 57%, 54%, 1);
+}
+
+/* Strings */
+
+string {
+  color: rgba(250, 183, 149, 0.9);
+}
+
+string.key {
+  color: hsla(344, 57%, 54%, 1);
+}
+
+string-template {
+  color: rgba(184, 119, 219, 0.9);
+}
+
+string-template.value {
+  color: hsl(27, 100%, 64%);
+}
+
+regex {
+  color: rgba(240, 148, 131, 0.9);
+}
+
+regex.escaped {
+  color: hsla(192, 67%, 44%, 1);
+}
+
+cdata {
+  color: #bbb;
+}
+
+/* Types */
+
+definition.class class.name,
+definition.type type.name,
+definition.package package.name,
+definition.enum enum.name,
+definition.union union.name,
+definition.struct struct.name {
+  font-weight: bold;
+  color: rgba(184, 119, 219, 0.9);
+}
+
+/* Members */
+
+definition.property property.name,
+definition.function function.name,
+definition.method method.name {
+  color: #bbb;
+}
+
+/* Tags */
+
+tag {
+  color: hsla(344, 57%, 54%, 1);
+}
+
+tag.framework {
+  color: rgba(184, 119, 219, 0.9);
+}
+
+tag.attribute.equals-sign {
+  color: #bbb;
+}
+
+tag.attribute.name {
+  color: rgba(240, 148, 131, 0.9);
+}
+
+tag.attribute.value {
+  color: rgba(250, 183, 149, 0.9);
+}
+
+tag.attribute.value.link {
+  text-decoration: underline;
+  color: rgba(250, 183, 149, 0.9);
+}
+
+/* Styles */
+
+style.at {
+  color: rgba(184, 119, 219, 0.9);
+}
+
+style.selector.element {
+  color: hsla(344, 57%, 54%, 1);
+}
+
+style.selector.identifier.id {
+  color: hsla(192, 67%, 44%, 1);
+}
+
+style.selector.identifier.class {
+  color: rgba(240, 148, 131, 0.9);
+}
+
+style.selector.pseudoelement,
+style.selector.pseudoclass {
+  color: rgba(250, 183, 149, 0.9);
+}
+
+style.string.single-quoted {
+  color: rgba(250, 183, 149, 0.9);
+}
+
+style.attribute.name {
+  color: #bbb;
+}
+
+style.value.number,
+style.value.color.hex {
+  color: rgba(240, 148, 131, 0.9);
+}
+
+style.value.keyword,
+style.value.color.named {
+  color: rgba(250, 194, 154, 0.9);
+}
+
+style.value.keyword.important {
+  color: rgba(184, 119, 219, 0.9);
+}
+
+/* CoffeeScript */
+
+coffeescript.operator.function {
+  color: rgba(184, 119, 219, 0.9);
+}
+
+/* CSS */
+
+css.style.selector.global.operator,
+css.style.media-feature.keyword {
+  color: hsla(344, 57%, 54%, 1);
+}
+
+css.style.media-query-list.keyword.media-type {
+  color: rgba(250, 194, 154, 0.9);
+}
+
+css.style.selector.operator {
+  color: #bbb;
+}
+
+/* Diff */
+
+diff.change.add {
+  background-color: rgba(9, 247, 160, 0.1);
+  color: #27d796;
+}
+
+diff.change.delete {
+  background-color: rgba(244, 62, 92, 0.1);
+  color: #e95379;
+}
+
+diff.processing.location {
+  color: rgba(184, 119, 219, 0.9);
+}
+
+/* Haml */
+
+haml.element {
+  color: rgba(240, 148, 131, 0.9);
+}
+
+haml.element.tag {
+  color: hsla(344, 57%, 54%, 1);
+}
+
+/* HTML */
+
+html.tag.attribute.operator {
+  color: #bbb;
+}
+
+/* INI */
+
+ini.section {
+  color: hsla(344, 57%, 54%, 1);
+}
+
+/* Markdown */
+
+markdown.markup.heading {
+  color: hsla(344, 57%, 54%, 1);
+}
+
+markdown.markup.block.quote {
+  color: rgba(250, 183, 149, 0.7);
+}
+
+markdown.image.markup.link {
+  color: rgba(240, 148, 131, 0.9);
+}
+
+markdown.image.string,
+markdown.markup.reference {
+  color: rgba(250, 183, 149, 0.9);
+}
+
+markdown.markup.list.item.ordered,
+markdown.markup.list.item.unordered,
+markdown.link.identifier.name.key,
+markdown.markup.inline.code,
+markdown.markup.block.code.langauge,
+markdown.markup.bracket {
+  color: rgba(240, 148, 131, 0.9);
+}
+
+markdown.markup.bold {
+  font-weight: bold;
+  color: rgba(184, 119, 219, 0.9);
+}
+
+markdown.markup.italic.underscore {
+  font-style: italic;
+  color: hsla(192, 67%, 44%, 1);
+}
+
+/* JS */
+
+javascript.keyword,
+javascript.key-expression {
+  color: rgba(184, 119, 219, 0.9);
+}
+
+javascript.key.string,
+javascript.identifier.core.global {
+  color: rgba(250, 183, 149, 0.9);
+}
+
+javascript.identifier,
+javascript.definition.variable,
+javascript.arguments,
+javascript.key.name,
+javascript.collection.array {
+  color: hsla(344, 57%, 54%, 1);
+}
+
+javascript.identifier.method,
+javascript.string-literal.inline-expression,
+javascript.string.regex.escape,
+javascript.identifier.function,
+javascript.string.backtick-quoted.escape,
+javascript.string.single-quoted.escape {
+  color: hsla(192, 67%, 44%, 1);
+}
+
+javascript.keyword.self {
+  font-style: italic;
+  color: rgba(250, 194, 154, 0.9);
+}
+
+javascript.identifier.type.class.name,
+javascript.identifier.type.class.superclass {
+  color: rgba(250, 194, 154, 0.9);
+}
+
+javascript.string.regex.delimiter {
+  color: rgba(184, 119, 219, 0.9);
+}
+
+javascript.colon,
+javascript.comma,
+javascript.semicolon,
+javascript.dot {
+  color: #bbb;
+}
+
+/* JSON */
+
+json.comma {
+  color: #bbb;
+}
+
+/* JSX */
+
+jsx.value.variable.bracket {
+  color: rgba(184, 119, 219, 0.9);
+}
+
+jsx.tag.open.name.framework,
+jsx.tag.close.name.framework {
+  color: rgba(250, 194, 154, 0.9);
+}
+
+jsx.tag.framework.open,
+jsx.tag.framework.close {
+  color: rgba(233, 86, 120, 0.7);
+}
+
+jsx.tag.framework.attribute.operator {
+  color: #bbb;
+}
+
+/* Lua */
+
+lua.identifier.property {
+  color: hsla(344, 57%, 54%, 1);
+}
+
+/* Perl */
+
+perl.identifier {
+  color: hsla(344, 57%, 54%, 1);
+}
+
+perl.identifier.function,
+perl.keyword.function {
+  color: rgba(37, 186, 188, 0.9);
+}
+
+/* PHP */
+
+php.keyword.statement,
+php.definition.identifier.method.name,
+php.string.escape,
+php.identifier.function {
+  color: hsla(192, 67%, 44%, 1);
+}
+
+php.definition.class,
+php.class.extends,
+php.sql.string-keyword {
+  color: rgba(184, 119, 219, 0.9);
+}
+
+php.identifier.name,
+php.identifier.property,
+php.string.double-quoted.string-template.variable {
+  color: hsla(344, 57%, 54%, 1);
+}
+
+php.identifier.type.class.name,
+php.type.identifier.name {
+  color: rgba(250, 194, 154, 0.9);
+}
+
+php.keyword.self {
+  font-style: italic;
+  color: rgba(250, 194, 154, 0.9);
+}
+
+php.semicolon {
+  color: #bbb;
+}
+
+/* Python */
+
+python.keyword.self {
+  font-style: italic;
+  color: rgba(250, 194, 154, 0.9);
+}
+
+python.arguments {
+  font-style: italic;
+  color: hsla(344, 57%, 54%, 1);
+}
+
+python.separator {
+  color: #bbb;
+}
+
+/* Ruby */
+
+ruby.identifier.args {
+  font-style: italic;
+  color: hsla(344, 57%, 54%, 1);
+}
+
+ruby.identifier.module {
+  color: rgba(250, 194, 154, 0.9);
+}
+
+ruby.identifier.type {
+  color: hsla(344, 57%, 54%, 1);
+}
+
+/* SCSS */
+
+scss.style.value.keyword.default {
+  color: rgba(184, 119, 219, 0.9);
+}
+
+scss.style.operator {
+  color: rgba(240, 148, 131, 0.9);
+}
+
+scss.style.selector.operator {
+  color: rgba(187, 187, 187, 0.8);
+}
+
+/* Shell Script */
+
+shell.string-template {
+  color: hsla(344, 57%, 54%, 1);
+}
+
+shell.keyword.builtin-command {
+  color: hsla(192, 67%, 44%, 1);
+}
+
+shell.operator.argument {
+  color: rgba(184, 119, 219, 0.9);
+}
+
+/* SQL */
+
+sql.identifier {
+  color: rgba(240, 148, 131, 0.9);
+}
+
+/* TSX */
+
+tsx.tag.open,
+tsx.tag.close {
+  color: rgba(233, 86, 120, 0.7);
+}
+
+tsx.tag.open.name,
+tsx.tag.close.name,
+tsx.value.variable {
+  color: hsla(344, 57%, 54%, 1);
+}
+
+tsx.tag.open.name.framework,
+tsx.tag.close.name.framework {
+  color: rgba(250, 194, 154, 0.9);
+}
+
+tsx.tag.framework.attribute.operator {
+  color: #bbb;
+}
+
+tsx.value.variable.bracket {
+  color: rgba(184, 119, 219, 0.9);
+}
+
+/* Typescript */
+
+typescript.identifier,
+typescript.identifier.key.name,
+typescript.identifier.property.name,
+typescript.identifier.name,
+typescript.identifier.property,
+typescript.identifier.constant.name {
+  color: hsla(344, 57%, 54%, 1);
+}
+
+typescript.identifier.method,
+typescript.identifier.function,
+typescript.string.backtick-quoted.escape,
+typescript.keyword.condition {
+  color: hsla(192, 67%, 44%, 1);
+}
+
+typescript.argument.types,
+typescript.identifier.type,
+typescript.identifier.type.interface.name,
+typescript.identifier.type.core,
+typescript.identifier.core.global,
+typescript.identifier.constant {
+  color: rgba(250, 194, 154, 0.9);
+}
+
+typescript.string.regex.delimiter {
+  color: rgba(184, 119, 219, 0.9);
+}
+
+typescript.keyword.self {
+  font-style: italic;
+  color: rgba(250, 194, 154, 0.9);
+}
+
+typescript.comma,
+typescript.semicolon {
+  color: #bbb;
+}
+
+/* YAML */
+
+yaml.string.unquoted {
+  color: #bbb;
+}
+
+yaml.operator.literal {
+  color: hsla(192, 67%, 44%, 1);
+}
+
+/* Terminal styles */
+
+terminal.black {
+  color: #1c1e26;
+}
+
+terminal.blue {
+  color: #26bbd9;
+}
+
+terminal.cyan {
+  color: #59e1e3;
+}
+
+terminal.green {
+  color: #29d398;
+}
+
+terminal.magenta {
+  color: #ee64ac;
+}
+
+terminal.red {
+  color: #e95678;
+}
+
+terminal.yellow {
+  color: #fab795;
+}
+
+terminal.white {
+  color: #fadad1;
+}
+
+terminal.bright-black {
+  color: #232530;
+}
+
+terminal.bright-blue {
+  color: #3fc4de;
+}
+
+terminal.bright-cyan {
+  color: #6be4e6;
+}
+
+terminal.bright-green {
+  color: #3fdaa4;
+}
+
+terminal.bright-magenta {
+  color: #f075b5;
+}
+
+terminal.bright-red {
+  color: #ec6a88;
+}
+
+terminal.bright-yellow {
+  color: #fbc3a7;
+}
+
+terminal.bright-white {
+  color: #fdf0ed;
+}
+
+/* Language Extension Styles */
+
+/* C# */
+
+source.cs.keyword.modifier,
+source.cs.keyword.other,
+source.cs.variable.other {
+  color: rgba(184, 119, 219, 0.9);
+}
+
+source.cs.identifier.type,
+source.cs.keyword.type {
+  color: rgba(250, 194, 154, 0.9);
+}
+
+source.cs.keyword.operator {
+  color: #bbb;
+}
+
+source.cs.entity.name.variable,
+source.cs.entity.name.identifier.argument {
+  color: hsla(344, 57%, 54%, 1);
+}
+
+/* Go */
+
+go.identifier,
+go.punctuation.delimiter.period {
+  color: #bbb;
+}
+
+go.identifier.type.core {
+  color: hsla(344, 57%, 54%, 1);
+}
+
+go.identifier.type.class,
+go.arguments {
+  color: rgba(184, 119, 219, 0.9);
+}
+
+go.identifier.method,
+go.identifier.function,
+go.definition.function.name,
+go.string.double-quoted.escape {
+  color: hsla(192, 67%, 44%, 1);
+}
+
+/* Vue */
+
+vue.html.tag.open,
+vue.html.tag.close {
+  color: rgba(233, 86, 120, 0.7);
+}
+
+vue.html.tag.attribute {
+  color: rgba(250, 194, 154, 0.9);
+}
+
+vue.html.tag.attribute.shorthand-key,
+vue.html.tag.attribute.name {
+  color: rgba(184, 119, 219, 0.9);
+  font-weight: bold;
+}
+
+vue.html.embedded.interpolation.bracket {
+  color: #bbb;
+  font-weight: bold;
+}
