@@ -1,0 +1,395 @@
+meta {
+  -theme-display-name: "Aventura Dark";
+  -theme-interface-style: dark;
+  -theme-vibrancy: none;
+  -theme-accent-color: auto;
+}
+
+/*
+ * Window styles
+ */
+
+meta.titlebar {
+  color: hsl(0, 0%, 92%);
+  background-color: hsla(0, 0%, 21%, 1);
+  border-color: hsl(0, 0%, 15%);
+}
+
+meta.window {
+  background-color: hsl(0, 0%, 15%);
+  border-color: hsl(0, 0%, 10%);
+}
+
+meta.button {
+  background: hsl(0, 0%, 36%);
+  border: hsl(0, 0%, 44%);
+  color: hsl(0, 0%, 90%);
+}
+
+meta.button.highlighted {
+  background: hsl(0, 0%, 46%);
+  border: hsl(0, 0%, 44%);
+  color: hsl(0, 0%, 90%);
+}
+
+meta.button.selected {
+  background: hsl(0, 0%, 46%);
+  border: hsla(0, 0%, 44%, 0);
+  color: hsla(0, 0%, 92%, 1);
+}
+
+meta.button.highlighted.selected {
+  color: #fff;
+}
+
+meta.textfield,
+meta.textfield.highlighted {
+  background-color: hsl(0, 0%, 19%);
+  border-color: hsl(0, 0%, 26%);
+}
+
+/*
+ * Document styles
+ */
+
+meta.document {
+  background-color: hsla(198, 23%, 20%, 1);
+  border-color: hsla(198, 23%, 20%, 1);
+}
+
+meta.document.button {
+  background: linear-gradient(hsl(210, 5%, 35%), hsl(210, 5%, 31%));
+  border: linear-gradient(hsla(210, 5%, 11%, 0), hsla(210, 5%, 8%, 0));
+}
+
+meta.document.button.disabled {
+  background: linear-gradient(hsla(220, 5%, 35%, 0.3), hsla(220, 5%, 31%, 0.3));
+}
+
+meta.document.button.highlighted {
+  background: linear-gradient(hsl(210, 5%, 34%), hsl(210, 5%, 30%));
+}
+
+meta.document.textfield {
+  background-color: hsla(198, 23%, 18%, 1);
+  border-color: hsla(198, 13%, 25%, 1);
+}
+
+meta.document.textfield.highlighted {
+  background-color: hsla(198, 23%, 18%, 1);
+  border-color: hsla(198, 13%, 25%, 1);
+}
+
+/* Text */
+
+meta.text {
+  color: hsla(0, 0%, 85%, 1);
+}
+
+meta.text.invisible {
+  color: hsla(198, 23%, 25%, 1);
+}
+
+meta.text.selected {
+  background-color: hsla(198, 30%, 16%, 1);
+}
+
+/* Cursor */
+
+meta.cursor {
+  background-color: hsla(198, 30%, 16%, 1);
+}
+
+/* Indentation Guides */
+
+meta.indentguide {
+  border-color: hsla(198, 23%, 25%, 1);
+}
+
+/* Gutter */
+
+meta.gutter {
+  color: hsla(198, 23%, 25%, 1);
+}
+
+meta.gutter.selected {
+  background-color: hsla(198, 27%, 16%, 1);
+  color: hsla(202, 12%, 42%, 1);
+}
+
+/* Syntax styles */
+
+comment {
+  color: hsla(202, 12%, 42%, 1);
+}
+processing {
+  color: hsla(0, 0%, 85%, 1);
+}
+declaration {
+  color: hsl(358, 62%, 67%);
+}
+bracket {
+  color: hsla(0, 0%, 85%, 1);
+}
+operator {
+  color: hsla(0, 0%, 85%, 1);
+}
+invalid {
+  color: hsl(358, 62%, 67%);
+  color: hsla(0, 0%, 85%, 1);
+}
+link {
+  color: hsla(43, 10%, 70%, 1);
+}
+
+/* Keywords */
+
+keyword {
+  color: hsl(18, 58%, 57%);
+}
+keyword.modifier {
+  color: hsla(0, 0%, 85%, 1);
+}
+keyword.condition {
+  color: hsla(0, 0%, 85%, 1);
+}
+keyword.construct {
+  color: hsla(0, 0%, 85%, 1);
+}
+keyword.statement {
+  color: hsla(0, 0%, 85%, 1);
+}
+keyword.self {
+  font-style: italic;
+  color: hsl(358, 62%, 67%);
+}
+keyword.self.prefix {
+  color: hsla(0, 0%, 85%, 1);
+}
+
+/* Values */
+
+value.boolean {
+  color: hsl(182, 43%, 63%);
+}
+value.null {
+  color: hsl(18, 58%, 57%);
+}
+value.number {
+  color: hsl(203, 36%, 57%);
+}
+value.entity {
+  color: hsl(203, 36%, 57%);
+}
+value.symbol {
+  color: hsl(203, 36%, 57%);
+}
+
+/* Identifiers */
+
+identifier {
+  color: hsl(18, 78%, 67%);
+}
+identifier.constant,
+identifier.global,
+identifier.variable {
+  color: hsla(0, 0%, 95%, 1);
+}
+identifier.constant.prefix,
+identifier.global.prefix,
+identifier.variable.prefix {
+  color: hsla(0, 0%, 95%, 1);
+}
+identifier.property {
+  color: hsl(182, 43%, 63%);
+}
+identifier.property.prefix {
+  color: hsla(0, 0%, 95%, 1);
+}
+identifier.decorator,
+identifier.function {
+  color: hsl(182, 43%, 63%);
+}
+
+identifier.method {
+  color: hsl(39, 73%, 70%);
+}
+identifier.key {
+  color: hsl(182, 43%, 63%);
+}
+identifier.argument {
+  color: hsl(18, 58%, 57%);
+}
+identifier.argument.prefix {
+  color: hsla(0, 0%, 95%, 1);
+}
+
+/* Strings */
+
+string {
+  color: hsl(358, 69%, 71%);
+}
+string.delimiter {
+  color: hsl(358, 69%, 71%);
+}
+string.escape {
+  color: hsl(182, 43%, 63%);
+}
+string.key {
+  color: hsl(39, 43%, 75%);
+}
+string-keyword {
+  color: hsla(0, 0%, 85%, 1);
+}
+string-template {
+  color: hsla(0, 0%, 85%, 1);
+}
+regex {
+  color: hsla(0, 0%, 85%, 1);
+}
+regex.escape {
+  color: hsla(0, 0%, 85%, 1);
+}
+cdata {
+  color: hsla(0, 0%, 85%, 1);
+}
+
+/* Types */
+definition.class.name,
+definition.type.name,
+definition.package.name,
+definition.enum.name,
+definition.union.name,
+definition.struct.name {
+}
+
+/* Members */
+definition.property.name {
+}
+definition.function.name,
+definition.method.name {
+}
+
+/* Javascript */
+
+javascript.bracket,
+javascript.operator {
+  color: hsla(0, 0%, 85%, 1);
+}
+
+/* Tags */
+tag {
+  color: hsl(203, 70%, 85%);
+}
+tag.name {
+  color: hsl(203, 36%, 57%);
+}
+tag.framework {
+  color: hsla(200, 11%, 69%, 1);
+}
+tag.framework.name {
+  color: hsla(43, 10%, 70%, 1);
+}
+tag.attribute.name {
+  color: hsl(182, 43%, 63%);
+}
+tag.framework.attribute.name {
+  color: hsla(43, 10%, 70%, 1);
+}
+tag.attribute.value {
+  color: hsl(358, 69%, 71%);
+}
+tag.attribute.value.delimiter {
+  color: hsl(358, 69%, 71%);
+}
+tag.attribute.operator {
+  color: hsl(182, 40%, 85%);
+}
+tag.attribute.value.link {
+  color: hsl(358, 69%, 71%);
+}
+
+/* Styles */
+style.at {
+  color: hsla(43, 10%, 70%, 1);
+  font-weight: bold;
+}
+style.selector.element {
+  color: hsl(203, 36%, 57%);
+}
+style.selector.identifier.id {
+  color: hsl(223, 38%, 49%);
+}
+style.selector.identifier.class {
+  color: hsl(182, 43%, 63%);
+}
+style.selector.pseudoclass {
+  color: hsl(182, 73%, 73%);
+}
+style.selector.pseudoelement {
+  color: hsl(203, 60%, 67%);
+}
+style.attribute.name {
+  color: hsla(0, 0%, 85%, 1);
+}
+style.value.number {
+  color: hsl(18, 58%, 57%);
+}
+style.value.color.hex {
+  color: hsl(18, 58%, 57%);
+}
+style.value.keyword {
+  color: hsl(18, 78%, 67%);
+}
+style.value.color.named {
+  color: hsl(18, 78%, 67%);
+}
+style.value.identifier.function {
+  color: hsl(39, 73%, 70%);
+}
+
+/* Markup */
+markup.heading {
+  color: hsla(43, 10%, 70%, 1);
+}
+markup.line {
+  color: hsla(43, 10%, 70%, 1);
+}
+markup.bold {
+  color: hsla(43, 10%, 70%, 1);
+  font-weight: bold;
+}
+markup.italic {
+  color: hsla(43, 10%, 70%, 1);
+  font-style: italic;
+}
+markup.strikethrough {
+  color: hsla(43, 10%, 70%, 1);
+}
+markup.list.item {
+  color: hsla(43, 10%, 70%, 1);
+}
+markup.code {
+  color: hsla(43, 10%, 70%, 1);
+}
+markup.link {
+  color: hsl(210, 100%, 70%);
+}
+
+/* JSX */
+
+jsx.tag.framework {
+  color: hsl(203, 70%, 85%);
+}
+
+jsx.tag.framework.name {
+  color: hsl(203, 60%, 67%);
+}
+
+jsx.tag.framework.attribute.name {
+  color: hsl(182, 43%, 63%);
+}
+
+jsx.tag.framework.attribute.operator {
+  color: hsl(182, 40%, 85%);
+}
