@@ -1,36 +1,37 @@
 meta {
   -theme-display-name: "Aventura Light";
   -theme-interface-style: light;
-  -theme-vibrancy: none;
-  -theme-accent-color: auto;
+  -theme-vibrancy: vibrant;
+  -theme-accent-color: false;
 }
 
 /* window */
 
 meta.window {
-  background-color: hsla(0, 0%, 93%, 1);
-  border-color: hsla(0, 0%, 83%, 1);
+  background-color: hsla(0, 0%, 100%, 1);
+  border-color: hsla(0, 0%, 77%, 0.5);
 }
 
 meta.titlebar {
-  color: hsl(240, 1%, 29%);
-  background-color: hsla(0, 0%, 99%, 1);
-  border-color: hsla(0, 0%, 87%, 1);
+  color: #49494a;
+  background-color: #ffffff;
+  border-color: hsla(0, 0%, 77%, 0.8);
 }
+
 meta.titlebar.inactive {
-  color: hsl(270, 1%, 67%);
+  color: hsl(180, 1%, 82%);
   background-color: hsl(0, 0%, 91%);
-  border-color: hsla(210, 1%, 73%, 1);
+  border-color: hsla(180, 1%, 78%, 1);
 }
 
 meta.button {
   background: hsla(0, 0%, 100%, 1);
   color: hsla(0, 0%, 15%, 1);
-  border: hsla(0, 0%, 71%, 1);
+  border: hsla(60, 1%, 72%, 1);
 }
 
 meta.button.highlighted {
-  background: hsla(0, 0%, 93%, 1);
+  background: hsla(0, 3%, 94%, 1);
   color: hsla(0, 0%, 15%, 1);
   border: hsla(0, 0%, 71%, 1);
 }
@@ -64,7 +65,7 @@ meta.textfield.highlighted {
 /* document styles */
 
 meta.document {
-  background-color: hsla(198, 100%, 99%, 1);
+  background-color: hsla(198, 100%, 100%, 1);
   color: hsla(0, 0%, 40%, 0.5);
 }
 
@@ -102,7 +103,7 @@ meta.text.invisible {
 }
 
 meta.text.selected {
-  background-color: hsla(198, 34%, 92%, 1);
+  background-color: hsla(18, 42%, 83%, 1);
 }
 
 meta.cursor {
@@ -114,12 +115,11 @@ meta.indentguide {
 }
 
 meta.gutter {
-  color: hsla(0, 0%, 40%, 0.1);
+  color: hsla(0, 0%, 40%, 0.17);
 }
 
 meta.gutter.selected {
-  background-color: hsla(198, 34%, 92%, 1);
-  color: hsla(0, 0%, 40%, 0.3);
+  color: hsla(0, 0%, 40%, 0.5);
 }
 
 /* Syntax styles */
