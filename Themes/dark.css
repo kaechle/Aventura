@@ -1,32 +1,32 @@
 meta {
   -theme-display-name: "Aventura Dark";
   -theme-interface-style: dark;
-  -theme-vibrancy: none;
-  -theme-accent-color: auto;
+  -theme-vibrancy: vibrant;
+  -theme-accent-color: true;
 }
 
 /* window styles */
 
 meta.titlebar {
   color: hsl(0, 0%, 92%);
-  background-color: hsla(0, 0%, 21%, 1);
-  border-color: hsl(0, 0%, 15%);
+  background-color: hsla(0, 0%, 0%, 1);
+  border-color: hsl(0, 0%, 17%);
 }
 
 meta.window {
-  background-color: hsl(0, 0%, 15%);
-  border-color: hsl(0, 0%, 10%);
+  background-color: hsl(0, 0%, 20%);
+  border-color: hsl(0, 0%, 12%);
 }
 
 meta.button {
-  background: hsl(0, 0%, 36%);
-  border: hsl(0, 0%, 44%);
+  background: hsl(120, 1%, 34%);
+  border: linear-gradient(hsla(0, 0%, 42%, 1), hsla(180, 2%, 9%, 0));
   color: hsl(0, 0%, 90%);
 }
 
 meta.button.highlighted {
-  background: hsl(0, 0%, 46%);
-  border: hsl(0, 0%, 44%);
+  background: hsl(120, 1%, 44%);
+  border: linear-gradient(hsl(210, 5%, 34%), hsl(210, 5%, 30%));
   color: hsl(0, 0%, 90%);
 }
 
@@ -42,20 +42,20 @@ meta.button.highlighted.selected {
 
 meta.textfield,
 meta.textfield.highlighted {
-  background-color: hsl(0, 0%, 19%);
-  border-color: hsl(0, 0%, 26%);
+  background-color: hsl(202, 17%, 2%);
+  border-color: hsl(0, 0%, 12%);
 }
 
 /* document styles */
 
 meta.document {
-  background-color: hsla(198, 23%, 17%, 1);
-  border-color: hsla(198, 23%, 20%, 1);
+  background-color: hsla(198, 23%, 12%, 1);
+  border-color: hsla(198, 23%, 12%, 1);
 }
 
 meta.document.button {
-  background: linear-gradient(hsl(210, 5%, 35%), hsl(210, 5%, 31%));
-  border: linear-gradient(hsla(210, 5%, 11%, 0), hsla(210, 5%, 8%, 0));
+  background: hsl(120, 1%, 34%);
+  border: linear-gradient(hsla(0, 0%, 42%, 1), hsla(180, 2%, 9%, 0));
 }
 
 meta.document.button.disabled {
@@ -63,16 +63,17 @@ meta.document.button.disabled {
 }
 
 meta.document.button.highlighted {
-  background: linear-gradient(hsl(210, 5%, 34%), hsl(210, 5%, 30%));
+  background: hsl(120, 1%, 44%);
+  border: linear-gradient(hsl(210, 5%, 34%), hsl(210, 5%, 30%));
 }
 
 meta.document.textfield {
-  background-color: hsla(198, 23%, 18%, 1);
+  background-color: hsla(198, 23%, 12%, 1);
   border-color: hsla(198, 13%, 25%, 1);
 }
 
 meta.document.textfield.highlighted {
-  background-color: hsla(198, 23%, 18%, 1);
+  background-color: hsla(198, 23%, 12%, 1);
   border-color: hsla(198, 13%, 25%, 1);
 }
 
@@ -83,11 +84,11 @@ meta.text {
 }
 
 meta.text.invisible {
-  color: hsla(198, 23%, 25%, 1);
+  color: hsla(198, 2%, 19%, 1);
 }
 
 meta.text.selected {
-  background-color: hsl(17, 25%, 32%);
+  background-color: hsl(18, 18%, 43%);
 }
 
 /* Cursor */
@@ -99,25 +100,21 @@ meta.cursor {
 /* Indentation Guides */
 
 meta.indentguide {
-  border-color: hsla(198, 12%, 25%, 1);
+  border-color: hsla(198, 2%, 19%, 1);
 }
 
 /* Gutter */
 
 meta.gutter {
-  color: hsla(198, 13%, 28%, 1);
+  color: hsla(198, 2%, 19%, 1);
 }
 
 meta.gutter.selected {
   background-color: hsla(198, 35%, 14%, 0);
-  color: hsla(198, 13%, 28%, 1);
+  color: hsla(202, 2%, 35%, 1);
 }
 
 /* Syntax styles */
-
-comment {
-  color: hsla(202, 2%, 42%, 1);
-}
 
 processing {
   color: hsla(0, 0%, 85%, 1);
@@ -127,28 +124,21 @@ declaration {
   color: hsl(358, 62%, 67%);
 }
 
-bracket {
-  color: hsla(202, 2%, 52%, 1);
+comment {
+  color: hsla(202, 2%, 35%, 1);
+  font-style: italic;
 }
 
-operator {
-  color: hsla(202, 2%, 52%, 1);
-}
-
-semicolon {
-  color: hsla(202, 2%, 52%, 1);
-}
-
-dot {
-  color: hsla(202, 2%, 52%, 1);
-}
-
+bracket,
+operator,
+semicolon,
+dot,
 comma {
-  color: hsla(202, 2%, 52%, 1);
+  color: hsla(202, 2%, 35%, 1);
 }
 
 invalid {
-  color: hsl(358, 62%, 67%);
+  background-color: hsl(358, 62%, 67%);
   color: hsla(0, 0%, 85%, 1);
 }
 
@@ -317,12 +307,16 @@ definition.method.name {
 
 javascript.bracket,
 javascript.operator {
-  color: hsla(202, 2%, 52%, 1);
+  color: hsla(202, 2%, 35%, 1);
+}
+
+javascript.operator {
+  color: hsl(39, 73%, 70%);
 }
 
 /* Tags */
 tag {
-  color: hsla(202, 2%, 52%, 1);
+  color: hsla(202, 2%, 35%, 1);
 }
 
 tag.name {
@@ -354,7 +348,7 @@ tag.attribute.value.delimiter {
 }
 
 tag.attribute.operator {
-  color: hsla(202, 2%, 52%, 1);
+  color: hsla(202, 2%, 35%, 1);
 }
 
 tag.attribute.value.link {
@@ -451,7 +445,7 @@ markup.link {
 /* JSX */
 
 jsx.tag.framework {
-  color: hsla(202, 2%, 52%, 1);
+  color: hsla(202, 2%, 35%, 1);
 }
 
 jsx.tag.framework.name {
@@ -463,5 +457,5 @@ jsx.tag.framework.attribute.name {
 }
 
 jsx.tag.framework.attribute.operator {
-  color: hsla(202, 2%, 52%, 1);
+  color: hsla(202, 2%, 35%, 1);
 }
