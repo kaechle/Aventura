@@ -77,56 +77,49 @@ meta.document.textfield.highlighted {
   border-color: hsla(198, 13%, 25%, 1);
 }
 
-/* Text */
+/* text editing */
 
 meta.text {
-  color: hsla(0, 0%, 85%, 1);
+  color: hsla(40, 60%, 99%, 0.7);
 }
 
 meta.text.invisible {
-  color: hsla(198, 2%, 19%, 1);
+  color: hsla(40, 60%, 99%, 0.15);
 }
 
 meta.text.selected {
-  background-color: hsl(18, 18%, 43%);
+  color: hsla(40, 60%, 99%, 0.5);
 }
-
-/* Cursor */
 
 meta.cursor {
-  background-color: hsla(198, 35%, 14%, 1);
+  background-color: hsla(17, 52%, 45%, 0.33);
 }
-
-/* Indentation Guides */
 
 meta.indentguide {
-  border-color: hsla(198, 2%, 19%, 1);
+  border-color: hsla(40, 60%, 99%, 0.05);
 }
 
-/* Gutter */
-
 meta.gutter {
-  color: hsla(198, 2%, 19%, 1);
+  color: hsla(40, 60%, 99%, 0.05);
 }
 
 meta.gutter.selected {
-  background-color: hsla(198, 35%, 14%, 0);
-  color: hsla(202, 2%, 35%, 1);
+  color: hsla(40, 60%, 99%, 0.2);
 }
 
 /* Syntax styles */
 
+comment {
+  color: hsla(40, 60%, 99%, 0.3);
+  font-style: italic;
+}
+
 processing {
-  color: hsla(0, 0%, 85%, 1);
+  color: hsla(40, 60%, 99%, 0.7);
 }
 
 declaration {
-  color: hsl(358, 62%, 67%);
-}
-
-comment {
-  color: hsla(202, 2%, 35%, 1);
-  font-style: italic;
+  color: hsla(347, 70%, 60%, 1);
 }
 
 bracket,
@@ -134,154 +127,153 @@ operator,
 semicolon,
 dot,
 comma {
-  color: hsla(202, 2%, 35%, 1);
+  color: hsla(40, 60%, 99%, 0.3);
 }
 
 invalid {
-  background-color: hsl(358, 62%, 67%);
-  color: hsla(0, 0%, 85%, 1);
+  background-color: hsla(347, 70%, 60%, 1);
+  color: hsla(40, 60%, 99%, 0.7);
 }
 
 link {
-  color: hsla(43, 10%, 70%, 1);
+  color: hsla(40, 60%, 99%, 0.7);
 }
 
-/* Keywords */
+/* keywords */
 
 keyword {
-  color: hsl(18, 58%, 57%);
+  color: hsla(27, 95%, 43%, 1);
 }
 
 keyword.modifier {
-  color: hsla(0, 0%, 85%, 1);
+  color: hsla(40, 60%, 99%, 0.7);
 }
 
 keyword.condition {
-  color: hsla(0, 0%, 85%, 1);
+  color: hsla(40, 60%, 99%, 0.7);
 }
 
 keyword.construct {
-  color: hsla(0, 0%, 85%, 1);
+  color: hsla(40, 60%, 99%, 0.7);
 }
 
 keyword.statement {
-  color: hsla(0, 0%, 85%, 1);
+  color: hsla(40, 60%, 99%, 0.7);
 }
 
 keyword.self {
-  font-style: italic;
-  color: hsl(358, 62%, 67%);
+  color: hsla(347, 70%, 60%, 1);
 }
 
 keyword.self.prefix {
-  color: hsla(0, 0%, 85%, 1);
+  color: hsla(40, 60%, 99%, 0.7);
 }
 
-/* Values */
+/* values */
 
 value.boolean {
-  color: hsl(182, 43%, 63%);
+  color: hsla(175, 95%, 26%, 0.9);
 }
 
 value.null {
-  color: hsl(18, 58%, 57%);
+  color: hsla(40, 60%, 99%, 0.7);
 }
 
 value.number {
-  color: hsl(203, 36%, 57%);
+  color: hsla(207, 51%, 45%, 1);
 }
 
 value.entity {
-  color: hsl(203, 36%, 57%);
+  color: hsla(207, 51%, 45%, 1);
 }
 
 value.symbol {
-  color: hsl(203, 36%, 57%);
+  color: hsla(207, 51%, 45%, 1);
 }
 
-/* Identifiers */
+/* identifiers */
 
 identifier {
-  color: hsl(18, 78%, 67%);
+  color: hsla(27, 95%, 43%, 1);
 }
 
 identifier.constant,
 identifier.global,
 identifier.variable {
-  color: hsla(0, 0%, 95%, 1);
+  color: hsla(40, 60%, 99%, 0.7);
 }
 
 identifier.constant.prefix,
 identifier.global.prefix,
 identifier.variable.prefix {
-  color: hsla(0, 0%, 95%, 1);
+  color: hsla(40, 60%, 99%, 0.7);
 }
 
 identifier.property {
-  color: hsl(182, 43%, 63%);
+  color: hsla(175, 95%, 36%, 1);
 }
 
 identifier.property.prefix {
-  color: hsla(0, 0%, 95%, 1);
+  color: hsla(40, 60%, 99%, 0.7);
 }
 
 identifier.decorator,
 identifier.function {
-  color: hsl(182, 43%, 63%);
+  color: hsla(175, 95%, 36%, 1);
 }
 
 identifier.method {
-  color: hsl(39, 73%, 70%);
+  color: hsla(42, 98%, 43%, 1);
 }
 
 identifier.key {
-  color: hsl(182, 43%, 63%);
+  color: hsla(175, 95%, 36%, 1);
 }
 
 identifier.argument {
-  color: hsl(18, 58%, 57%);
+  color: hsla(27, 95%, 43%, 1);
 }
 
 identifier.argument.prefix {
-  color: hsla(0, 0%, 95%, 1);
+  color: hsla(40, 60%, 99%, 0.7);
 }
 
-/* Strings */
+/* strings */
 
 string {
-  color: hsl(358, 69%, 71%);
+  color: hsla(347, 70%, 60%, 1);
 }
 
 string.delimiter {
-  color: hsl(358, 69%, 71%);
+  color: hsla(347, 70%, 60%, 0.6);
 }
 
 string.escape {
-  color: hsl(182, 43%, 63%);
+  color: hsla(175, 95%, 26%, 0.9);
 }
 
 string.key {
-  color: hsl(39, 43%, 75%);
+  color: hsla(42, 98%, 43%, 0.8);
 }
 
 string-keyword {
-  color: hsla(0, 0%, 85%, 1);
+  color: hsla(40, 60%, 99%, 0.8);
 }
 
 string-template {
-  color: hsla(0, 0%, 85%, 1);
+  color: hsla(40, 60%, 99%, 0.8);
 }
 
 regex {
-  color: hsla(0, 0%, 85%, 1);
+  color: hsla(40, 60%, 99%, 0.8);
 }
 
 regex.escape {
-  color: hsla(0, 0%, 85%, 1);
+  color: hsla(40, 60%, 99%, 0.8);
 }
 
 cdata {
-  color: hsla(0, 0%, 85%, 1);
+  color: hsla(40, 60%, 99%, 0.8);
 }
 
 /* Types */
@@ -292,170 +284,168 @@ definition.package.name,
 definition.enum.name,
 definition.union.name,
 definition.struct.name {
+  color: hsla(40, 60%, 99%, 0.8);
 }
 
-/* Members */
+/* members */
 
 definition.property.name {
+  color: hsla(40, 60%, 99%, 0.8);
 }
 
 definition.function.name,
 definition.method.name {
 }
 
-/* Javascript */
+/* javascript and jsx */
 
-javascript.bracket,
-javascript.operator {
-  color: hsla(202, 2%, 35%, 1);
+javascript.bracket {
+  color: hsla(40, 60%, 99%, 0.3);
 }
 
 javascript.operator {
-  color: hsl(39, 73%, 70%);
+  color: hsla(42, 98%, 43%, 1);
 }
 
-/* Tags */
+jsx.tag.framework {
+  color: hsla(40, 60%, 99%, 0.4);
+}
+
+jsx.tag.framework.name {
+  color: hsla(207, 61%, 60%, 0.8);
+}
+
+jsx.tag.framework.attribute.name {
+  color: hsla(175, 95%, 36%, 1);
+}
+
+jsx.tag.framework.attribute.operator {
+  color: hsla(175, 95%, 36%, 0.6);
+}
+
+/* tags */
+
 tag {
-  color: hsla(202, 2%, 35%, 1);
+  color: hsla(40, 60%, 99%, 0.3);
 }
 
 tag.name {
-  color: hsl(203, 36%, 57%);
+  color: hsla(207, 51%, 45%, 0.8);
 }
 
 tag.framework {
-  color: hsla(200, 11%, 69%, 1);
+  color: hsla(40, 60%, 99%, 0.7);
 }
 
 tag.framework.name {
-  color: hsla(43, 10%, 70%, 1);
+  color: hsla(40, 60%, 99%, 0.7);
 }
 
 tag.attribute.name {
-  color: hsl(182, 43%, 63%);
+  color: hsla(175, 95%, 36%, 1);
 }
 
 tag.framework.attribute.name {
-  color: hsla(43, 10%, 70%, 1);
+  color: hsla(175, 95%, 36%, 1);
 }
 
 tag.attribute.value {
-  color: hsl(358, 69%, 71%);
+  color: hsla(347, 70%, 60%, 1);
 }
 
 tag.attribute.value.delimiter {
-  color: hsl(358, 69%, 71%);
+  color: hsla(347, 70%, 60%, 0.6);
 }
 
 tag.attribute.operator {
-  color: hsla(202, 2%, 35%, 1);
+  color: hsla(175, 95%, 36%, 0.6);
 }
 
 tag.attribute.value.link {
-  color: hsl(358, 69%, 71%);
+  color: hsla(347, 70%, 60%, 1);
 }
 
-/* Styles */
+/* css */
 
 style.at {
-  color: hsla(43, 10%, 70%, 1);
+  color: hsla(40, 60%, 99%, 0.7);
   font-weight: bold;
 }
 
 style.selector.element {
-  color: hsl(203, 36%, 57%);
+  color: hsla(207, 51%, 45%, 1);
 }
 
 style.selector.identifier.id {
-  color: hsl(223, 38%, 49%);
+  color: hsla(207, 51%, 45%, 1);
 }
 
 style.selector.identifier.class {
-  color: hsl(182, 43%, 63%);
+  color: hsla(175, 95%, 36%, 1);
 }
 
 style.selector.pseudoclass {
-  color: hsl(182, 73%, 73%);
+  color: hsla(175, 95%, 26%, 0.7);
 }
 
 style.selector.pseudoelement {
-  color: hsl(203, 60%, 67%);
+  color: hsla(175, 95%, 26%, 0.7);
 }
 
 style.attribute.name {
-  color: hsla(0, 0%, 85%, 1);
+  color: hsla(40, 60%, 99%, 0.7);
 }
 
 style.value.number {
-  color: hsl(18, 58%, 57%);
+  color: hsla(27, 95%, 43%, 1);
 }
 
 style.value.color.hex {
-  color: hsl(18, 58%, 57%);
+  color: hsla(27, 95%, 43%, 1);
 }
 
 style.value.keyword {
-  color: hsl(18, 78%, 67%);
+  color: hsla(27, 95%, 43%, 1);
 }
 
 style.value.color.named {
-  color: hsl(18, 78%, 67%);
+  color: hsla(27, 95%, 43%, 1);
 }
 
 style.value.identifier.function {
-  color: hsl(39, 73%, 70%);
+  color: hsla(42, 98%, 43%, 1);
 }
 
 /* Markup */
 
 markup.heading {
-  color: hsla(43, 10%, 70%, 1);
+  color: hsla(40, 60%, 99%, 0.7);
 }
 
 markup.line {
-  color: hsla(43, 10%, 70%, 1);
+  color: hsla(40, 60%, 99%, 0.7);
 }
 
 markup.bold {
-  color: hsla(43, 10%, 70%, 1);
-  font-weight: bold;
+  color: hsla(40, 60%, 99%, 0.7);
 }
 
 markup.italic {
-  color: hsla(43, 10%, 70%, 1);
-  font-style: italic;
+  color: hsla(40, 60%, 99%, 0.7);
 }
 
 markup.strikethrough {
-  color: hsla(43, 10%, 70%, 1);
+  color: hsla(40, 60%, 99%, 0.7);
 }
 
 markup.list.item {
-  color: hsla(43, 10%, 70%, 1);
+  color: hsla(40, 60%, 99%, 0.7);
 }
 
 markup.code {
-  color: hsla(43, 10%, 70%, 1);
+  color: hsla(40, 60%, 99%, 0.7);
 }
 
 markup.link {
-  color: hsl(210, 100%, 70%);
-}
-
-/* JSX */
-
-jsx.tag.framework {
-  color: hsla(202, 2%, 35%, 1);
-}
-
-jsx.tag.framework.name {
-  color: hsl(203, 60%, 67%);
-}
-
-jsx.tag.framework.attribute.name {
-  color: hsl(182, 43%, 63%);
-}
-
-jsx.tag.framework.attribute.operator {
-  color: hsla(202, 2%, 35%, 1);
+  color: hsla(40, 60%, 99%, 0.7);
 }
