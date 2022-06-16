@@ -25,9 +25,9 @@ meta.titlebar.inactive {
 }
 
 meta.button {
-  background: hsla(0, 0%, 100%, 1);
-  color: hsla(0, 0%, 15%, 1);
-  border: hsla(60, 1%, 72%, 1);
+  color: #262626;
+  background: #ffffff;
+  border: linear-gradient(#dededf, #bdbdbd);
 }
 
 meta.button.highlighted {
@@ -54,24 +54,25 @@ meta.button.disabled {
 
 meta.textfield {
   background-color: hsla(0, 0%, 100%, 1);
-  border-color: hsla(300, 1%, 86%, 1);
+  border: linear-gradient(#ebebec, #c1c2c1);
 }
 
 meta.textfield.highlighted {
-  background-color: hsla(240, 7%, 12%, 0);
-  border-color: hsl(177, 1%, 64%);
+  background-color: hsla(0, 0%, 100%, 1);
+  border: linear-gradient(#ebebec, #c1c2c1);
 }
 
 /* document styles */
 
 meta.document {
-  background-color: hsla(198, 100%, 100%, 1);
+  background-color: hsl(42, 50%, 99%);
   color: hsla(0, 0%, 40%, 0.5);
 }
 
 meta.document.button {
-  background: linear-gradient(hsl(210, 5%, 85%), hsl(210, 5%, 81%));
-  border: linear-gradient(hsla(210, 5%, 11%, 0), hsla(210, 5%, 8%, 0));
+  color: #262626;
+  background: #ffffff;
+  border: linear-gradient(#dededf, #bdbdbd);
 }
 
 meta.document.button.disabled {
@@ -83,212 +84,211 @@ meta.document.button.highlighted {
 }
 
 meta.document.textfield {
-  background-color: hsla(198, 23%, 98%, 1);
-  border-color: hsl(0, 0%, 71%);
+  background-color: hsla(0, 0%, 100%, 1);
+  border: linear-gradient(#ebebec, #c1c2c1);
 }
 
 meta.document.textfield.highlighted {
-  background-color: hsla(198, 23%, 98%, 1);
-  border-color: hsla(198, 13%, 25%, 1);
+  background-color: hsla(0, 0%, 100%, 1);
+  border: linear-gradient(#ebebec, #c1c2c1);
 }
 
 /* text editing */
 
 meta.text {
-  color: hsla(0, 0%, 20%, 1);
+  color: #162225;
 }
 
 meta.text.invisible {
-  color: hsla(0, 0%, 40%, 0.1);
+  color: #f5f2eb;
 }
 
 meta.text.selected {
-  background-color: hsla(18, 42%, 83%, 1);
+  background-color: #e6cdc2;
 }
 
 meta.cursor {
-  background-color: hsla(198, 34%, 22%, 1);
+  background-color: #e6e3dc;
 }
 
 meta.indentguide {
-  color: hsla(0, 0%, 40%, 0.2);
+  background-color: #e6e3dc;
 }
 
 meta.gutter {
-  color: hsla(0, 0%, 40%, 0.17);
+  color: #e6e3dc;
 }
 
 meta.gutter.selected {
-  color: hsla(0, 0%, 40%, 0.5);
+  color: #ccc9c2;
 }
 
 /* Syntax styles */
 
 comment {
-  color: hsla(0, 0%, 40%, 0.5);
+  color: #ccc9c2;
 }
 
 processing {
-  color: hsla(0, 0%, 20%, 1);
+  color: #162225;
 }
 
 declaration {
-  color: hsl(358, 100%, 39%);
+  color: #c7c4bd;
 }
 
-bracket {
-  color: hsla(0, 0%, 20%, 1);
-}
-
-operator {
-  color: hsla(0, 0%, 20%, 1);
+bracket,
+operator,
+semicolon,
+dot,
+comma {
+  color: #c7c4bd;
 }
 
 invalid {
-  color: hsl(358, 100%, 39%);
-  color: hsla(0, 0%, 20%, 1);
+  color: #162225;
 }
 
 link {
-  color: hsla(0, 0%, 20%, 1);
+  color: #162225;
 }
 
-/* Keywords */
+/* keywords */
 
 keyword {
-  color: hsl(18, 100%, 35%);
+  color: hsl(18, 68%, 52%);
 }
 
 keyword.modifier {
-  color: hsla(0, 0%, 20%, 1);
+  color: #162225;
 }
 
 keyword.condition {
-  color: hsla(0, 0%, 20%, 1);
+  color: #162225;
 }
 
 keyword.construct {
-  color: hsla(0, 0%, 20%, 1);
+  color: #162225;
 }
 
 keyword.statement {
-  color: hsla(0, 0%, 20%, 1);
+  color: #162225;
 }
 
 keyword.self {
   font-style: italic;
-  color: hsl(358, 100%, 39%);
+  color: hsl(358, 62%, 67%);
 }
 
 keyword.self.prefix {
-  color: hsla(0, 0%, 20%, 1);
+  color: #162225;
 }
 
-/* Values */
+/* values */
 
 value.boolean {
-  color: hsl(182, 73%, 28%);
+  color: hsl(182, 100%, 28%);
 }
 
 value.null {
-  color: hsl(18, 100%, 35%);
+  color: hsl(18, 68%, 52%);
 }
 
 value.number {
-  color: hsl(203, 36%, 48%);
+  color: hsl(203, 96%, 32%);
 }
 
 value.entity {
-  color: hsl(203, 36%, 48%);
+  color: hsl(203, 96%, 32%);
 }
 
 value.symbol {
-  color: hsl(203, 36%, 48%);
+  color: hsl(203, 96%, 32%);
 }
 
-/* Identifiers */
+/* identifiers */
 
 identifier {
-  color: hsl(18, 100%, 35%);
+  color: hsl(18, 68%, 52%);
 }
 
 identifier.constant,
 identifier.global,
 identifier.variable {
-  color: hsla(0, 0%, 20%, 1);
+  color: #162225;
 }
 
 identifier.constant.prefix,
 identifier.global.prefix,
 identifier.variable.prefix {
-  color: hsla(0, 0%, 20%, 1);
+  color: #162225;
 }
 
 identifier.property {
-  color: hsl(182, 73%, 28%);
+  color: hsl(182, 100%, 28%);
 }
 
 identifier.property.prefix {
-  color: hsla(0, 0%, 20%, 1);
+  color: #162225;
 }
 
 identifier.decorator,
 identifier.function {
-  color: hsl(182, 73%, 28%);
+  color: hsl(182, 100%, 28%);
 }
 
 identifier.method {
-  color: hsl(39, 100%, 38%);
+  color: hsl(41, 80%, 45%);
 }
 
 identifier.key {
-  color: hsl(182, 73%, 28%);
+  color: hsl(182, 100%, 28%);
 }
 
 identifier.argument {
-  color: hsl(18, 100%, 35%);
+  color: hsl(18, 68%, 52%);
 }
 
 identifier.argument.prefix {
-  color: hsla(0, 0%, 20%, 1);
+  color: #162225;
 }
 
-/* Strings */
+/* strings */
 
 string {
-  color: hsl(358, 100%, 39%);
+  color: hsl(358, 60%, 50%);
 }
 
 string.delimiter {
-  color: hsl(358, 100%, 39%);
+  color: hsl(358, 60%, 50%);
 }
 
 string.escape {
-  color: hsl(182, 73%, 28%);
+  color: hsl(182, 100%, 28%);
 }
 
 string.key {
-  color: hsl(39, 100%, 38%);
+  color: hsl(39, 43%, 75%);
 }
 
 string-keyword {
-  color: hsla(0, 0%, 20%, 1);
+  color: #162225;
 }
 
 string-template {
-  color: hsla(0, 0%, 20%, 1);
+  color: #162225;
 }
 
 regex {
-  color: hsla(0, 0%, 20%, 1);
+  color: #162225;
 }
 
 regex.escape {
-  color: hsla(0, 0%, 20%, 1);
+  color: #162225;
 }
 
 cdata {
-  color: hsla(0, 0%, 20%, 1);
+  color: #162225;
 }
 
 /* Types */
@@ -301,7 +301,7 @@ definition.union.name,
 definition.struct.name {
 }
 
-/* Members */
+/* members */
 
 definition.property.name {
 }
@@ -310,156 +310,156 @@ definition.function.name,
 definition.method.name {
 }
 
-/* Javascript */
+/* javascript and jsx */
 
-javascript.bracket {
-  color: hsla(0, 0%, 20%, 1);
+javascript.bracket,
+javascript.operator {
+  color: #c7c4bd;
 }
 
 javascript.operator {
-  color: hsl(182, 73%, 28%);
+  color: hsl(41, 80%, 45%);
+}
+
+jsx.tag.framework {
+  color: #c7c4bd;
+}
+
+jsx.tag.framework.name {
+  color: hsl(203, 96%, 32%);
+}
+
+jsx.tag.framework.attribute.name {
+  color: hsl(182, 100%, 28%);
+}
+
+jsx.tag.framework.attribute.operator {
+  color: #c7c4bd;
 }
 
 /* tags */
 
 tag {
-  color: hsla(0, 0%, 20%, 1);
+  color: #c7c4bd;
 }
 
 tag.name {
-  color: hsl(203, 96%, 28%);
-  font-weight: bold;
+  color: hsl(203, 96%, 32%);
 }
 
 tag.framework {
-  color: hsl(203, 96%, 28%);
+  color: hsla(200, 11%, 69%, 1);
 }
 
 tag.framework.name {
-  color: hsl(203, 36%, 48%);
+  color: hsla(43, 10%, 70%, 1);
 }
 
 tag.attribute.name {
-  color: hsl(182, 73%, 28%);
-  font-weight: bold;
+  color: hsl(182, 100%, 28%);
 }
 
 tag.framework.attribute.name {
-  color: hsl(182, 73%, 28%);
+  color: hsla(43, 10%, 70%, 1);
 }
 
 tag.attribute.value {
-  color: hsl(18, 100%, 35%);
+  color: hsl(358, 60%, 50%);
 }
 
 tag.attribute.value.delimiter {
-  color: hsl(18, 100%, 35%);
+  color: hsl(358, 60%, 50%);
 }
 
 tag.attribute.operator {
-  color: hsl(182, 73%, 28%);
+  color: #c7c4bd;
 }
 
 tag.attribute.value.link {
-  color: hsl(18, 100%, 35%);
+  color: hsl(358, 60%, 50%);
 }
 
 /* css */
 
 style.at {
-  color: hsl(203, 96%, 28%);
+  color: hsla(43, 10%, 70%, 1);
   font-weight: bold;
 }
 
 style.selector.element {
-  color: hsl(203, 96%, 28%);
-  font-weight: bold;
+  color: hsl(203, 96%, 32%);
 }
 
 style.selector.identifier.id {
-  color: hsl(223, 88%, 38%);
-  font-weight: bold;
+  color: hsl(223, 38%, 49%);
 }
 
 style.selector.identifier.class {
-  color: hsl(182, 73%, 28%);
-  font-weight: bold;
+  color: hsl(182, 100%, 28%);
 }
 
 style.selector.pseudoclass {
-  color: hsl(182, 73%, 28%);
+  color: hsl(182, 100%, 28%);
 }
 
 style.selector.pseudoelement {
-  color: hsl(203, 96%, 28%);
+  color: hsl(203, 96%, 32%);
 }
 
 style.attribute.name {
-  color: hsla(0, 0%, 20%, 1);
+  color: #162225;
 }
 
 style.value.number {
-  color: hsl(18, 100%, 35%);
+  color: hsl(18, 68%, 52%);
 }
 
 style.value.color.hex {
-  color: hsl(18, 100%, 35%);
+  color: hsl(18, 68%, 52%);
 }
 
 style.value.keyword {
-  color: hsl(18, 100%, 35%);
+  color: hsl(18, 68%, 52%);
 }
 
 style.value.color.named {
-  color: hsl(18, 100%, 35%);
+  color: hsl(18, 68%, 52%);
 }
 
 style.value.identifier.function {
-  color: hsl(39, 100%, 38%);
+  color: hsl(41, 80%, 45%);
 }
 
 /* Markup */
+
 markup.heading {
-  color: hsla(0, 0%, 20%, 1);
+  color: #162225;
 }
+
 markup.line {
-  color: hsla(0, 0%, 20%, 1);
+  color: #162225;
 }
+
 markup.bold {
-  color: hsla(0, 0%, 20%, 1);
-  font-weight: bold;
+  color: #162225;
 }
+
 markup.italic {
-  color: hsla(0, 0%, 20%, 1);
-  font-style: italic;
+  color: #162225;
 }
+
 markup.strikethrough {
-  color: hsla(0, 0%, 20%, 1);
+  color: #162225;
 }
+
 markup.list.item {
-  color: hsla(0, 0%, 20%, 1);
+  color: #162225;
 }
+
 markup.code {
-  color: hsla(0, 0%, 20%, 1);
+  color: #162225;
 }
+
 markup.link {
-  color: hsl(223, 88%, 38%);
-}
-
-/* JSX */
-
-jsx.tag.framework {
-  color: hsla(0, 0%, 20%, 1);
-}
-
-jsx.tag.framework.name {
-  color: hsl(203, 96%, 28%);
-}
-
-jsx.tag.framework.attribute.name {
-  color: hsl(182, 73%, 38%);
-}
-
-jsx.tag.framework.attribute.operator {
-  color: hsl(182, 73%, 38%);
+  color: #162225;
 }
