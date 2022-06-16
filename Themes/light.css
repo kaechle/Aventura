@@ -14,7 +14,7 @@ meta.window {
 
 meta.titlebar {
   color: #49494a;
-  background-color: #ffffff;
+  background-color: hsla(0, 0%, 100%, 1);
   border-color: hsla(0, 0%, 77%, 0.8);
 }
 
@@ -23,6 +23,8 @@ meta.titlebar.inactive {
   background-color: hsl(0, 0%, 91%);
   border-color: hsla(180, 1%, 78%, 1);
 }
+
+/* ui */
 
 meta.button {
   color: #262626;
@@ -62,13 +64,6 @@ meta.textfield.highlighted {
   border: linear-gradient(#ebebec, #c1c2c1);
 }
 
-/* document styles */
-
-meta.document {
-  background-color: hsl(42, 50%, 99%);
-  color: hsla(0, 0%, 40%, 0.5);
-}
-
 meta.document.button {
   color: #262626;
   background: #ffffff;
@@ -94,6 +89,11 @@ meta.document.textfield.highlighted {
 }
 
 /* text editing */
+
+meta.document {
+  background-color: hsl(42, 50%, 99%);
+  color: hsla(0, 0%, 40%, 0.5);
+}
 
 meta.text {
   color: hsla(192, 25%, 12%, 1);
