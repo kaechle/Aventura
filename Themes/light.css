@@ -2,7 +2,7 @@ meta {
   -theme-display-name: "Aventura Light";
   -theme-interface-style: light;
   -theme-vibrancy: vibrant;
-  -theme-accent-color: false;
+  -theme-accent-color: true;
 }
 
 /* window */
@@ -113,12 +113,13 @@ meta.indentguide {
 }
 
 meta.gutter {
-  color: hsla(192, 25%, 12%, 0.25);
+  color: hsla(192, 25%, 12%, 0.2);
+  font-weight: 100;
 }
 
 meta.gutter.selected {
-  color: hsla(192, 25%, 12%, 0.35);
-  font-weight: bold;
+  color: hsla(192, 25%, 12%, 0.4);
+  font-weight: 600;
 }
 
 /* Syntax styles */
@@ -368,6 +369,37 @@ jsx.tag.attribute.value {
 }
 
 jsx.tag-content.bare-words {
+  color: hsla(192, 25%, 12%, 0.8);
+  font-weight: 200;
+}
+
+/* tsx */
+
+tsx.tag.framework {
+  color: hsla(192, 25%, 12%, 0.4);
+}
+
+tsx.tag.framework.name {
+  color: hsla(200, 100%, 35%, 1);
+  font-weight: 600;
+}
+
+tsx.tag.framework.attribute.name {
+  color: hsla(180, 70%, 35%, 1);
+  font-weight: 500;
+}
+
+tsx.tag.framework.attribute.operator {
+  color: hsla(180, 70%, 35%, 0.75);
+  font-weight: 100;
+}
+
+tsx.tag.attribute.value {
+  color: hsla(358, 67%, 44%, 1);
+  font-weight: 400;
+}
+
+tsx.tag-content.bare-words {
   color: hsla(192, 25%, 12%, 0.8);
   font-weight: 200;
 }
