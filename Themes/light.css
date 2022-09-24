@@ -8,14 +8,14 @@ meta {
 /* window */
 
 meta.window {
-  background-color: hsla(0, 0%, 100%, 1);
-  border-color: hsla(0, 0%, 77%, 0.5);
+  background-color: #fcfcfc;
+  border-color: hsla(0, 0%, 65%, 0.5);
 }
 
 meta.titlebar {
   color: #49494a;
-  background-color: hsla(0, 0%, 100%, 1);
-  border-color: hsla(0, 0%, 77%, 0.8);
+  background-color: #f4f4f2;
+  border-color: hsla(0, 0%, 65%, 0.8);
 }
 
 meta.titlebar.inactive {
@@ -26,32 +26,30 @@ meta.titlebar.inactive {
 
 /* ui */
 
-meta.button {
-  color: #262626;
+meta.button,
+meta.document.button {
+  color: rgba(64, 63, 59, 0.798);
   background: #ffffff;
-  border: linear-gradient(#dededf, #bdbdbd);
+  border: linear-gradient(#d6dadc, #d6dadc);
 }
 
+meta.button.disabled,
+meta.document.button.disabled {
+  color: #b9babb;
+  background: hsla(200, 20%, 97%, 0.5);
+  border: linear-gradient(#e1e5e7, #d1d5d7);
+}
+
+meta.button.highlighted,
 meta.button.highlighted {
-  background: hsla(0, 3%, 94%, 1);
-  color: hsla(0, 0%, 15%, 1);
-  border: hsla(0, 0%, 71%, 1);
+  background: linear-gradient(hsla(0, 0%, 94%, 0.75), rgba(240, 240, 240, 0.75));
 }
 
-meta.button.selected {
-  background: hsl(0, 0%, 91%);
-  color: hsla(177, 0%, 100%, 1);
-  border: hsla(177, 1%, 59%, 0);
-}
-
-meta.button.highlighted.selected {
-  color: white;
-}
-
-meta.button.disabled {
-  background: hsla(177, 0%, 59%, 0.2);
-  color: hsla(177, 0%, 62%, 1);
-  border: hsla(177, 1%, 72%, 1);
+meta.button.selected,
+meta.document.button.selected {
+  background: linear-gradient(#c5704a, #bc592f);
+  border: linear-gradient(#c5704a, #bc592f);
+  color: #fffefd;
 }
 
 meta.textfield {
@@ -64,18 +62,14 @@ meta.textfield.highlighted {
   border: linear-gradient(#ebebec, #c1c2c1);
 }
 
-meta.document.button {
-  color: #262626;
-  background: #ffffff;
-  border: linear-gradient(#dededf, #bdbdbd);
+meta.textfield {
+  background-color: hsla(0, 0%, 100%, 1);
+  border: linear-gradient(#ebebec, #c1c2c1);
 }
 
-meta.document.button.disabled {
-  background: linear-gradient(hsla(220, 5%, 35%, 0.3), hsla(220, 5%, 31%, 0.3));
-}
-
-meta.document.button.highlighted {
-  background: linear-gradient(hsl(210, 5%, 34%), hsl(210, 5%, 30%));
+meta.textfield.highlighted {
+  background-color: hsla(0, 0%, 100%, 1);
+  border: linear-gradient(#ebebec, #c1c2c1);
 }
 
 meta.document.textfield {
@@ -91,51 +85,53 @@ meta.document.textfield.highlighted {
 /* text editing */
 
 meta.document {
-  background-color: hsl(42, 50%, 99%);
-  color: hsla(0, 0%, 40%, 0.5);
+  background-color: #fffefd;
+  border-color: hsla(54, 6%, 31%, 0.2);
 }
 
 meta.text {
-  color: hsla(192, 25%, 12%, 0.8);
-  font-weight: 200;
+  color: hsla(54, 6%, 31%, 1);
+  font-weight: 500;
 }
 
 meta.text.invisible {
-  color: hsla(192, 25%, 12%, 0.12);
+  color: hsla(54, 6%, 31%, 0.12);
+  font-weight: 100;
 }
 
 meta.cursor {
-  background-color: hsla(203, 17%, 81%, 1);
+  background-color: #fcefc3;
 }
 
 meta.indentguide {
-  border-color: hsla(192, 25%, 12%, 0.12);
+  color: hsla(54, 6%, 31%, 0.2);
 }
 
 meta.gutter {
-  color: hsla(192, 25%, 12%, 0.2);
+  color: hsla(54, 6%, 31%, 0.17);
   font-weight: 100;
 }
 
 meta.gutter.selected {
-  color: hsla(192, 25%, 12%, 0.4);
-  font-weight: 600;
+  color: hsla(54, 6%, 31%, 0.5);
+  font-weight: 100;
 }
 
 /* Syntax styles */
 
 comment {
-  color: hsla(192, 25%, 12%, 0.4);
+  color: hsla(54, 6%, 31%, 0.5);
   font-style: italic;
-  font-weight: 200;
+  font-weight: 100;
 }
 
 processing {
-  color: hsla(192, 25%, 12%, 1);
+  color: hsla(54, 6%, 31%, 1);
 }
 
 declaration {
-  color: hsla(347, 89%, 40%, 1);
+  color: hsla(358, 67%, 44%, 1);
+  font-weight: 400;
 }
 
 bracket,
@@ -143,86 +139,88 @@ operator,
 semicolon,
 dot,
 comma {
-  color: hsla(192, 15%, 12%, 0.6);
+  color: hsla(54, 6%, 31%, 0.6);
   font-weight: 100;
 }
 
 invalid {
   background-color: hsla(347, 89%, 40%, 1);
-  color: hsla(192, 25%, 12%, 1);
+  color: hsla(54, 6%, 31%, 1);
 }
 
 link {
-  color: hsla(192, 25%, 12%, 1);
+  color: hsla(54, 6%, 31%, 1);
 }
 
 /* keywords */
 
 keyword {
-  color: hsla(27, 95%, 43%, 1);
-  font-weight: 500;
+  color: hsla(23, 80%, 50%, 1);
+  font-weight: 400;
 }
 
 keyword.modifier {
-  color: hsla(27, 95%, 43%, 1);
-  font-weight: 200;
+  color: hsla(23, 80%, 50%, 1);
+  font-weight: 100;
 }
 
 keyword.condition {
-  color: hsla(27, 95%, 43%, 1);
-  font-weight: 200;
+  color: hsla(23, 80%, 50%, 1);
+  font-weight: 100;
 }
 
 keyword.construct {
-  color: hsla(27, 95%, 43%, 1);
-  font-weight: 200;
+  color: hsla(23, 80%, 50%, 1);
+  font-weight: 100;
 }
 
 keyword.statement {
-  color: hsla(27, 95%, 43%, 1);
-  font-weight: 200;
+  color: hsla(23, 80%, 50%, 1);
+  font-weight: 100;
 }
 
 keyword.self {
-  color: hsla(347, 89%, 40%, 1);
+  color: hsla(358, 67%, 44%, 1);
+  font-weight: 400;
 }
 
 keyword.self.prefix {
-  color: hsla(192, 25%, 12%, 1);
+  color: hsla(54, 6%, 31%, 1);
 }
 
 /* values */
 
 value.boolean {
-  color: hsla(180, 70%, 35%, 0.75);
-  font-weight: 500;
+  color: #8d8cd7;
+  font-weight: 100;
   font-style: italic;
 }
 
 value.null {
-  color: hsla(192, 25%, 12%, 1);
+  color: hsla(54, 6%, 31%, 1);
 }
 
 value.number {
-  color: hsla(200, 100%, 35%, 1);
-  font-weight: 300;
+  color: hsla(210, 40%, 40%, 1);
+  font-weight: 600;
 }
 
 value.entity {
-  color: hsla(200, 100%, 35%, 1);
+  color: hsla(210, 40%, 40%, 1);
   font-weight: 300;
 }
 
 value.symbol {
-  color: hsla(200, 100%, 35%, 1);
+  color: hsla(210, 40%, 40%, 1);
   font-weight: 300;
 }
 
 /* identifiers */
 
 identifier {
-  color: hsla(27, 95%, 43%, 1);
+  color: hsla(23, 80%, 50%, 1);
   font-weight: 500;
+  text-decoration: underline;
 }
 
 identifier.constant,
@@ -235,7 +233,7 @@ identifier.variable {
 identifier.constant.prefix,
 identifier.global.prefix,
 identifier.variable.prefix {
-  color: hsla(192, 25%, 12%, 1);
+  color: hsla(54, 6%, 31%, 1);
 }
 
 identifier.property {
@@ -243,18 +241,19 @@ identifier.property {
 }
 
 identifier.property.prefix {
-  color: hsla(192, 25%, 12%, 1);
+  color: hsla(54, 6%, 31%, 1);
 }
 
 identifier.decorator,
 identifier.function {
-  color: hsla(27, 95%, 43%, 1);
+  color: hsla(46, 100%, 47%, 1);
   font-weight: 500;
 }
 
 identifier.method {
-  color: hsla(38, 100%, 47%, 1);
+  color: hsla(23, 80%, 50%, 1);
   font-weight: 500;
+  text-decoration: underline;
 }
 
 identifier.key {
@@ -262,11 +261,13 @@ identifier.key {
 }
 
 identifier.argument {
-  color: hsla(27, 95%, 43%, 1);
+  color: hsla(23, 80%, 50%, 1);
+  font-weight: 500;
+  text-decoration: underline;
 }
 
 identifier.argument.prefix {
-  color: hsla(192, 25%, 12%, 1);
+  color: hsla(54, 6%, 31%, 1);
 }
 
 /* strings */
@@ -277,7 +278,7 @@ string {
 }
 
 string.delimiter {
-  color: hsla(358, 67%, 44%, 0.75);
+  color: hsla(54, 6%, 31%, 0.6);
   font-weight: 100;
 }
 
@@ -286,28 +287,29 @@ string.escape {
 }
 
 string.key {
-  color: hsla(38, 100%, 47%, 1);
+  color: hsla(23, 80%, 50%, 1);
   font-weight: 500;
+  text-decoration: underline;
 }
 
 string-keyword {
-  color: hsla(192, 25%, 12%, 1);
+  color: hsla(54, 6%, 31%, 1);
 }
 
 string-template {
-  color: hsla(192, 25%, 12%, 1);
+  color: hsla(54, 6%, 31%, 1);
 }
 
 regex {
-  color: hsla(192, 25%, 12%, 1);
+  color: hsla(54, 6%, 31%, 1);
 }
 
 regex.escape {
-  color: hsla(192, 25%, 12%, 1);
+  color: hsla(54, 6%, 31%, 1);
 }
 
 cdata {
-  color: hsla(192, 25%, 12%, 1);
+  color: hsla(54, 6%, 31%, 1);
 }
 
 /* Types */
@@ -318,13 +320,13 @@ definition.package.name,
 definition.enum.name,
 definition.union.name,
 definition.struct.name {
-  color: hsla(192, 25%, 12%, 1);
+  color: hsla(54, 6%, 31%, 1);
 }
 
 /* members */
 
 definition.property.name {
-  color: hsla(192, 25%, 12%, 1);
+  color: hsla(54, 6%, 31%, 1);
 }
 
 definition.function.name,
@@ -335,22 +337,22 @@ definition.method.name {
 
 javascript.bracket,
 javascript.block {
-  color: hsla(192, 15%, 12%, 0.6);
-  font-weight: 100;
+  color: hsla(54, 6%, 31%, 0.7);
+  font-weight: 200;
 }
 
 javascript.operator {
-  color: hsla(38, 100%, 47%, 1);
-  font-weight: 500;
+  color: hsla(54, 6%, 31%, 0.7);
+  font-weight: 200;
 }
 
 jsx.tag.framework {
-  color: hsla(192, 25%, 12%, 0.4);
+  color: hsla(192, 25%, 12%, 0.6);
 }
 
 jsx.tag.framework.name {
   color: hsla(200, 100%, 35%, 1);
-  font-weight: 600;
+  font-weight: 400;
 }
 
 jsx.tag.framework.attribute.name {
@@ -359,12 +361,12 @@ jsx.tag.framework.attribute.name {
 }
 
 jsx.tag.framework.attribute.operator {
-  color: hsla(180, 70%, 35%, 0.75);
-  font-weight: 100;
+  color: hsla(54, 6%, 31%, 0.7);
+  font-weight: 200;
 }
 
 jsx.tag.attribute.value {
-  color: hsla(358, 67%, 44%, 1);
+  color: hsla(1, 50%, 55%, 1);
   font-weight: 400;
 }
 
@@ -376,26 +378,28 @@ jsx.tag-content.bare-words {
 /* tsx */
 
 tsx.tag.framework {
-  color: hsla(192, 25%, 12%, 0.4);
+  color: hsla(54, 6%, 31%, 0.7);
+  font-weight: 200;
 }
 
 tsx.tag.framework.name {
-  color: hsla(200, 100%, 35%, 1);
-  font-weight: 600;
-}
-
-tsx.tag.framework.attribute.name {
-  color: hsla(180, 70%, 35%, 1);
+  color: hsla(210, 40%, 40%, 1);
   font-weight: 500;
 }
 
+tsx.tag.framework.attribute.name {
+  color: hsla(180, 70%, 30%, 1);
+  font-weight: 400;
+  font-style: italic;
+}
+
 tsx.tag.framework.attribute.operator {
-  color: hsla(180, 70%, 35%, 0.75);
-  font-weight: 100;
+  color: hsla(54, 6%, 31%, 0.7);
+  font-weight: 200;
 }
 
 tsx.tag.attribute.value {
-  color: hsla(358, 67%, 44%, 1);
+  color: hsla(1, 50%, 55%, 1);
   font-weight: 400;
 }
 
@@ -407,151 +411,158 @@ tsx.tag-content.bare-words {
 /* tags */
 
 tag {
-  color: hsla(200, 100%, 35%, 0.75);
-  font-weight: 100;
+  color: hsla(54, 6%, 31%, 0.7);
+  font-weight: 200;
 }
 
 tag.name {
-  color: hsla(200, 100%, 35%, 1);
+  color: hsla(210, 40%, 40%, 1);
   font-weight: 500;
 }
 
 tag.framework {
-  color: hsla(0, 100%, 0%, 1);
+  color: hsla(54, 6%, 31%, 0.5);
+  font-weight: 100;
 }
 
 tag.framework.name {
-  color: hsla(0, 100%, 0%, 1);
+  color: hsla(210, 40%, 40%, 1);
+  font-weight: 500;
 }
 
 tag.attribute.name {
-  color: hsla(180, 70%, 35%, 1);
-  font-weight: 500;
+  color: hsla(180, 70%, 30%, 1);
+  font-weight: 400;
+  font-style: italic;
 }
 
 tag.framework.attribute.name {
-  color: hsla(180, 70%, 35%, 1);
-  font-weight: 500;
+  color: hsla(180, 70%, 30%, 1);
+  font-weight: 400;
+  font-style: italic;
 }
 
 tag.attribute.value {
-  color: hsla(358, 67%, 44%, 1);
+  color: hsla(1, 50%, 55%, 1);
   font-weight: 400;
 }
 
 tag.attribute.value.delimiter {
-  color: hsla(358, 67%, 44%, 0.75);
-  font-weight: 100;
+  color: hsla(54, 6%, 31%, 0.7);
+  font-weight: 200;
 }
 
 tag.attribute.operator {
-  color: hsla(180, 70%, 35%, 0.75);
-  font-weight: 100;
+  color: hsla(54, 6%, 31%, 0.7);
+  font-weight: 200;
 }
 
 tag.attribute.value.link {
-  color: hsla(358, 67%, 44%, 1);
-  font-weight: 400;
+  color: hsla(23, 80%, 50%, 1);
+  font-weight: 500;
   text-decoration: underline;
 }
 
 /* css */
 
 style.at {
-  color: hsla(200, 100%, 35%, 1);
+  color: hsla(210, 40%, 40%, 1);
   font-weight: 600;
 }
 
 style.selector {
-  color: hsla(200, 100%, 35%, 1);
+  color: hsla(210, 40%, 40%, 1);
   font-weight: 600;
 }
 
 style.selector.element {
-  color: hsla(200, 100%, 35%, 1);
+  color: hsla(210, 40%, 40%, 1);
   font-weight: 600;
 }
 
 style.selector.identifier.id {
-  color: hsla(230, 50%, 45%, 1);
+  color: hsla(210, 40%, 40%, 1);
   font-weight: 600;
 }
 
 style.selector.identifier.class {
-  color: hsla(180, 70%, 35%, 1);
+  color: hsla(180, 70%, 30%, 1);
   font-weight: 400;
+  font-style: italic;
 }
 
 style.selector.pseudoclass {
-  color: hsla(180, 70%, 35%, 1);
+  color: hsla(180, 70%, 30%, 1);
   font-weight: 400;
+  font-style: italic;
 }
 
 style.selector.pseudoelement {
-  color: hsla(180, 70%, 35%, 1);
+  color: hsla(180, 70%, 30%, 1);
   font-weight: 400;
+  font-style: italic;
 }
 
 style.attribute.name {
-  color: hsla(192, 25%, 12%, 1);
-  font-weight: 200;
+  color: hsla(54, 6%, 31%, 1);
+  font-weight: 400;
 }
 
 style.value.number {
-  color: hsla(27, 95%, 43%, 1);
+  color: hsla(23, 80%, 50%, 1);
   font-weight: 500;
 }
 
 style.value.color.hex {
-  color: hsla(27, 95%, 43%, 1);
+  color: hsla(23, 80%, 50%, 1);
   font-weight: 500;
 }
 
 style.value.keyword {
-  color: hsla(27, 95%, 43%, 1);
-  font-weight: 500;
+  color: hsla(1, 50%, 55%, 1);
+  font-weight: 400;
 }
 
 style.value.color.named {
-  color: hsla(27, 95%, 43%, 1);
-  font-weight: 500;
+  color: hsla(1, 50%, 55%, 1);
+  font-weight: 400;
 }
 
 style.value.identifier.function {
-  color: hsla(38, 100%, 47%, 1);
+  color: hsla(46, 100%, 47%, 1);
   font-weight: 500;
 }
 
-/* Markup */
+/* markup */
 
 markup.heading {
-  color: hsla(192, 25%, 12%, 1);
+  color: hsla(54, 6%, 31%, 1);
 }
 
 markup.line {
-  color: hsla(192, 25%, 12%, 1);
+  color: hsla(54, 6%, 31%, 1);
 }
 
 markup.bold {
-  color: hsla(192, 25%, 12%, 1);
+  color: hsla(54, 6%, 31%, 1);
 }
 
 markup.italic {
-  color: hsla(192, 25%, 12%, 1);
+  color: hsla(54, 6%, 31%, 1);
 }
 
 markup.strikethrough {
-  color: hsla(192, 25%, 12%, 1);
+  color: hsla(54, 6%, 31%, 1);
 }
 
 markup.list.item {
-  color: hsla(192, 25%, 12%, 1);
+  color: hsla(54, 6%, 31%, 1);
 }
 
 markup.code {
-  color: hsla(192, 25%, 12%, 1);
+  color: hsla(54, 6%, 31%, 1);
 }
 
 markup.link {
-  color: hsla(192, 25%, 12%, 1);
+  color: hsla(54, 6%, 31%, 1);
 }
