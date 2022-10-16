@@ -1,0 +1,31 @@
+@import "other/scss/base";
+@import "other/scss/colors";
+@import "other/scss/partials";
+
+$color: hsl(336, 33%, 52%);
+$color: hsl(336, 33%, 52%);
+$color: hsl(336, 33%, 52%);
+
+#header {
+  background-color: rgba(100, 120, 100, 0.5);
+  background-image: url("http://timkaechle.com/img/fux.png");
+  background-image: linear-gradient(hsl(336, 33%, 52%) hsla(60, 5%, 71%, 0.6));
+  transform: translate(-30px 30px);
+}
+
+.header-content {
+  color: darken($color, 5%) !important;
+  background: gray;
+  font-family: "SF Pro", "Arial", "Helvetica", sans-serif;
+
+  :after {
+    display: block;
+    content: "";
+    box-shadow: 4px 10px;
+  }
+}
+
+body,
+html {
+  display: grid;
+}
