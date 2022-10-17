@@ -1,5 +1,3 @@
-/* TODO: Final adjustment of color tints and refactor */
-
 meta {
   -theme-display-name: "Aventura Dark";
   -theme-interface-style: dark;
@@ -7,7 +5,7 @@ meta {
   -theme-accent-color: true;
 }
 
-/* window styles */
+/* window  */
 
 meta.window {
   background: hsla(0, 0%, 14%, 1);
@@ -20,7 +18,7 @@ meta.titlebar {
   color: hsla(23, 0%, 92%, 1);
 }
 
-/* ui */
+/* window ui */
 
 meta.button {
   border: hsla(0, 0%, 37%, 0);
@@ -55,7 +53,7 @@ meta.textfield.highlighted {
   background-color: hsla(0, 0%, 0%, 0.7);
 }
 
-/* ui document components */
+/* text editing ui */
 
 meta.document.button {
   border: color(display-p3 0.369 0.369 0.369 / 1);
@@ -90,8 +88,6 @@ meta.document.textfield.highlighted {
   background-color: hsla(0, 0%, 15%, 1);
 }
 
-/* text editing */
-
 meta.document {
   background: hsla(0, 0%, 16%, 1);
   border-color: hsla(0, 0%, 0%, 0);
@@ -110,22 +106,26 @@ meta.text.selected {
 }
 
 meta.cursor {
-  background: hsl(0, 0%, 17%);
+  background: hsla(0, 0%, 18%, 1);
 }
 
 meta.indentguide {
-  border-color: hsla(0, 0%, 92%, 0.15);
+  border-color: hsla(0, 0%, 92%, 0.12);
 }
 
 meta.gutter {
-  color: hsla(0, 0%, 92%, 0.15);
+  color: hsla(0, 0%, 92%, 0.16);
+  font-weight: 100;
 }
 
 meta.gutter.selected {
-  color: hsla(0, 0%, 92%, 0.4);
+  color: hsla(0, 0%, 92%, 0.5);
+  font-weight: 100;
 }
 
-/* Syntax styles */
+/* global syntax styles */
+
+/* TODO: Final adjustment of color tints and refactor */
 
 comment {
   color: hsla(0, 0%, 92%, 0.4);
@@ -133,7 +133,8 @@ comment {
 }
 
 declaration {
-  color: color(display-p3 0.701 0.535 0.669);
+  color: hsla(316, 28%, 63%, 1);
+  font-weight: 100;
 }
 
 bracket,
@@ -141,23 +142,22 @@ semicolon,
 dot,
 comma,
 tag,
+operator.colon,
+string.delimiter,
+json.key.delimiter,
+javascript.colon,
 tag.framework,
 tag.attribute.value.delimiter,
 tag.attribute.operator,
 style.operator,
-css.style.attribute.value,
-scss.style.attribute-list,
-string.delimiter,
-javascript.colon,
-json.key.delimiter,
-operator.colon,
-string.escape,
 style.attribute-list.bracket,
 style.selector.separator,
 style.attribute.separator {
   color: hsla(0, 0%, 92%, 0.5);
   font-weight: 100;
 }
+
+/* TODO: Color for invalid */
 
 style.value.keyword.important,
 javascript.operator {
@@ -205,6 +205,7 @@ value.boolean {
 
 value.null {
   color: hsla(0, 0%, 92%, 0.5);
+  font-weight: 100;
 }
 
 value.number {
@@ -212,9 +213,16 @@ value.number {
   font-weight: 300;
 }
 
+value.number.unit {
+  color: hsla(359, 54%, 78%, 0.7);
+  font-style: italic;
+  font-weight: 100;
+}
+
 value.entity,
 value.symbol {
   color: hsla(0, 0%, 92%, 0.7);
+  font-weight: 100;
 }
 
 /* identifiers */
@@ -267,17 +275,14 @@ identifier.argument.prefix {
 
 /* strings */
 
-style.at-rule.import,
-style.string,
-string,
-style.selector.identifier.id,
-style.selector.identifier.class {
+string {
   color: hsla(220, 30%, 60%, 1);
   font-weight: 400;
 }
 
 string.escape {
   color: color(display-p3 0.686 0.678 0.635 / 0.5);
+  font-weight: 100;
 }
 
 string-keyword,
@@ -294,6 +299,7 @@ definition.struct.name definition.property.name,
 definition.function.name,
 definition.method.name {
   color: hsla(49, 8%, 66%, 1);
+  font-weight: 100;
 }
 
 tag.attribute.value,
@@ -305,9 +311,20 @@ tag.attribute.value.link {
 
 /* css */
 
-style.at {
-  color: hsla(187, 4%, 43%, 1);
-  font-weight: bold;
+style.operator,
+style.attribute-list.bracket,
+style.selector.separator,
+style.attribute.separator {
+  color: hsla(0, 0%, 92%, 0.5);
+  font-weight: 100;
+}
+
+style.at-rule.import,
+style.string,
+style.selector.identifier.id,
+style.selector.identifier.class {
+  color: hsla(220, 30%, 60%, 1);
+  font-weight: 400;
 }
 
 tag.name,
@@ -328,24 +345,15 @@ style.selector.pseudoelement {
   font-weight: 100;
 }
 
-style.value.number {
-  color: hsla(358, 50%, 70%, 1);
-  font-weight: 300;
-}
-
-style.value.number.unit {
-  color: hsla(359, 54%, 78%, 0.7);
-  font-style: italic;
-  font-weight: 100;
-}
-
 style.value.color.hex,
 style.value.color.named {
   color: hsla(358, 60%, 70%, 1);
+  font-weight: 100;
 }
 
 style.value.keyword {
   color: hsla(316, 28%, 63%, 1);
+  font-weight: 100;
 }
 
 style.variable-definition.identifier.variable.name,
@@ -373,14 +381,14 @@ markup.bold {
 
 markup.italic {
   color: hsla(0, 0%, 92%, 1);
-  font-style: italic;
   font-weight: 100;
+  font-style: italic;
 }
 
 markup.strikethrough {
   color: hsla(0, 0%, 92%, 1);
-  text-decoration: line-through;
   font-weight: 100;
+  text-decoration: line-through;
 }
 
 markup.list.item {

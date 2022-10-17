@@ -1,195 +1,234 @@
 meta {
   -theme-display-name: "Aventura Light";
   -theme-interface-style: light;
-  -theme-vibrancy: none;
+  -theme-vibrancy: vibrant;
   -theme-accent-color: true;
 }
 
 /* window */
 
 meta.window {
-  background-color: #f4f4f2;
-  border-color: hsla(0, 0%, 0%, 0.1);
+  background: hsla(0, 0%, 96%, 1);
+  border: hsla(0, 0%, 50%, 0.28);
 }
 
 meta.titlebar {
-  color: #49494a;
-  background-color: #ffffff;
-  border-color: hsla(0, 0%, 60%, 0.5);
+  background: hsla(60, 0%, 99%, 1);
+  border: hsla(0, 0%, 50%, 0.4);
+  color: hsla(0, 0%, 30%, 1);
 }
 
 meta.titlebar.inactive {
   color: hsl(180, 1%, 82%);
-  background-color: hsl(0, 0%, 91%);
-  border-color: hsla(180, 1%, 78%, 1);
+  background: hsl(0, 0%, 91%);
+  border: hsla(180, 1%, 78%, 1);
 }
 
-/* ui */
+/* window ui */
 
-meta.button,
-meta.document.button {
-  color: rgba(64, 63, 59, 0.798);
-  background: #ffffff;
-  border: linear-gradient(#d6dadc, #d6dadc);
+meta.button {
+  background: hsla(0, 0%, 50%, 0);
+  border: hsla(0, 0%, 50%, 0);
+  color: hsla(0, 0%, 14%, 1);
 }
 
-meta.button.disabled,
-meta.document.button.disabled {
-  color: #b9babb;
-  background: hsla(200, 20%, 97%, 0.5);
-  border: linear-gradient(#e1e5e7, #d1d5d7);
-}
-
-meta.button.highlighted,
 meta.button.highlighted {
-  background: linear-gradient(hsla(0, 0%, 94%, 0.75), rgba(240, 240, 240, 0.75));
+  background: hsla(0, 0%, 50%, 0.15);
+  border: hsla(0, 0%, 50%, 0.15);
+  color: hsla(0, 0%, 14%, 1);
 }
 
-meta.button.selected,
-meta.document.button.selected {
-  background: linear-gradient(
-    color(display-p3 0.594 0.355 0.754),
-    color(display-p3 0.548 0.282 0.727)
-  );
-  border: linear-gradient(color(display-p3 0.594 0.355 0.754), color(display-p3 0.548 0.282 0.727));
-  color: color(display-p3 0.882 0.878 0.875);
+meta.button.selected {
+  background: hsl(16, 62%, 46%);
+  border: hsl(16, 62%, 46%);
+  color: hsla(0, 0%, 100%, 1);
+}
+
+meta.button.disabled {
+  background: hsla(0, 0%, 50%, 0);
+  border: hsla(0, 0%, 50%, 0);
+  color: hsla(0, 0%, 14%, 0.24);
 }
 
 meta.textfield {
-  background-color: hsla(0, 0%, 100%, 1);
-  border: linear-gradient(#ebebec, #c1c2c1);
-}
-
-meta.document.textfield {
-  background-color: hsla(0, 0%, 100%, 1);
-  border: linear-gradient(#ebebec, #c1c2c1);
+  background: hsla(0, 0%, 75%, 0.22);
+  border: hsla(0, 0%, 75%, 0.6);
 }
 
 meta.textfield.highlighted {
-  background-color: hsla(0, 0%, 100%, 1);
-  border: linear-gradient(#ebebec, #c1c2c1);
+  background: hsl(0, 0%, 100%);
+  border: hsla(0, 0%, 75%, 0.5);
+}
+
+/* text editing ui */
+
+meta.document.button {
+  background: hsla(0, 0%, 100%, 0);
+  border: hsla(0, 0%, 69%, 1);
+  color: hsla(0, 0%, 28%, 1);
+}
+
+meta.document.button.highlighted {
+  background: hsla(0, 0%, 90%, 1);
+  border: hsla(0, 0%, 69%, 1);
+  color: hsla(0, 0%, 14%, 1);
+}
+
+meta.document.button.selected {
+  background: hsla(0, 0%, 100%, 0);
+  border: hsla(0, 0%, 69%, 1);
+  color: hsl(16, 62%, 46%);
+}
+
+meta.document.button.disabled {
+  background: hsla(0, 0%, 89%, 0);
+  border: hsla(0, 0%, 69%, 1);
+  color: hsla(0, 0%, 76%, 1);
+}
+
+meta.document.textfield {
+  background: hsla(0, 0%, 91%, 1);
+  border: hsla(0, 0%, 86%, 1);
 }
 
 meta.document.textfield.highlighted {
-  background-color: hsla(0, 0%, 100%, 1);
-  border: linear-gradient(#ebebec, #c1c2c1);
+  background: hsla(0, 0%, 100%, 1);
+  border: hsla(0, 0%, 89%, 1);
 }
 
-/* text editing */
-
 meta.document {
-  background-color: color(display-p3 0.992 0.988 0.98);
-  border-color: color(display-p3 0.882 0.878 0.863);
+  background: hsla(0, 0%, 100%, 1);
+  border: hsls(0, 0%, 90%, 0);
 }
 
 meta.text {
-  color: color(display-p3 0.137 0.149 0.149);
+  color: hsla(0, 0%, 24%, 1);
 }
 
 meta.text.invisible {
-  color: color(display-p3 0.941 0.933 0.922);
+  color: hsla(0, 0%, 24%, 0.1);
 }
 
 meta.text.selected {
-  background-color: color(display-p3 0.792 0.906 0.91);
+  background: hsl(179, 48%, 84%);
 }
 
 meta.cursor {
-  background-color: color(display-p3 0.792 0.906 0.91);
+  background: hsla(0, 0%, 97%, 1);
 }
 
 meta.indentguide {
-  border-color: color(display-p3 0.918 0.914 0.894);
+  border-color: hsla(0, 0%, 24%, 0.12);
 }
 
 meta.gutter {
-  color: color(display-p3 0.882 0.878 0.863);
+  color: hsla(0, 0%, 24%, 0.16);
+  font-weight: 100;
 }
 
 meta.gutter.selected {
-  color: color(display-p3 0.749 0.745 0.722);
+  color: hsla(0, 0%, 24%, 0.5);
+  font-weight: 100;
 }
 
-/* Syntax styles */
+/* global syntax styles */
+
+/* TODO: Final adjustment of color tints and refactor */
 
 comment {
-  color: color(display-p3 0.749 0.745 0.722);
+  color: hsla(0, 0%, 8%, 0.4);
+  font-weight: 100;
 }
 
 declaration {
-  color: color(display-p3 0.831 0.431 0.486);
+  color: hsla(316, 18%, 43%, 1);
+  font-weight: 100;
 }
 
 bracket,
 semicolon,
 dot,
-comma {
-  color: color(display-p3 0.639 0.663 0.667);
+comma,
+tag,
+operator.colon,
+string.delimiter,
+json.key.delimiter,
+javascript.colon,
+tag.framework,
+tag.attribute.value.delimiter,
+tag.attribute.operator,
+style.operator,
+style.attribute-list.bracket,
+style.selector.separator,
+style.attribute.separator {
+  color: hsla(0, 0%, 8%, 0.5);
+  font-weight: 100;
 }
 
-invalid {
-  background-color: color(display-p3 0.706 0.18 0.212);
-  color: color(display-p3 0.992 0.988 0.98);
+/* TODO: Color for invalid */
+
+style.value.keyword.important,
+javascript.operator {
+  color: hsl(15, 75%, 48%);
+  font-weight: 100;
 }
 
 link {
-  color: color(display-p3 0.322 0.518 0.749);
+  color: hsla(201, 41%, 53%, 1);
+  font-weight: 100;
 }
 
 /* keywords */
 
 keyword {
-  color: color(display-p3 0.42 0.443 0.447);
+  color: hsla(0, 0%, 8%, 0.7);
+  font-weight: 100;
   font-style: italic;
-  font-weight: 400;
 }
 
-keyword.modifier {
-  color: color(display-p3 0.227 0.518 0.533);
-}
-
-keyword.condition {
-  color: color(display-p3 0.318 0.341 0.349);
-}
-
-keyword.construct {
-  color: color(display-p3 0.227 0.518 0.533);
-}
-
-keyword.statement {
-  color: color(display-p3 0.227 0.518 0.533);
+keyword.modifier,
+keyword.condition,
+keyword.construct,
+keyword.statement,
+keyword.self.prefix {
+  color: hsla(0, 0%, 15%, 0.7);
+  font-weight: 100;
 }
 
 keyword.self {
-  color: color(display-p3 0.706 0.18 0.212);
+  color: hsla(316, 18%, 53%, 1);
   font-style: italic;
-}
-
-keyword.self.prefix {
-  color: color(display-p3 0.318 0.341 0.349);
+  font-weight: 100;
 }
 
 /* values */
 
 value.boolean {
-  color: color(display-p3 0.706 0.18 0.212);
+  color: hsla(104, 20%, 50%, 1);
   font-style: italic;
+  font-weight: 300;
 }
 
 value.null {
-  color: color(display-p3 0.42 0.443 0.447);
+  color: hsla(0, 0%, 8%, 0.5);
+  font-weight: 100;
 }
 
 value.number {
-  color: color(display-p3 0.765 0.357 0.173);
+  color: hsla(355, 46%, 52%, 1);
+  font-weight: 400;
 }
 
-value.entity {
-  color: color(display-p3 0.318 0.341 0.349);
+value.number.unit {
+  color: hsla(359, 54%, 55%, 0.7);
+  font-weight: 100;
+  font-style: italic;
 }
 
+value.entity,
 value.symbol {
-  color: color(display-p3 0.318 0.341 0.349);
+  color: hsla(0, 0%, 8%, 0.7);
+  font-weight: 100;
 }
 
 /* identifiers */
@@ -322,6 +361,12 @@ tag.framework {
 
 tag.name,
 tag.framework.name {
+  color: hsla(174, 27%, 53%, 1);
+  font-weight: 400;
+}
+
+tag.name,
+tag.framework.name {
   color: color(display-p3 0.227 0.518 0.533);
 }
 
@@ -342,64 +387,53 @@ tag.attribute.operator {
 
 /* css */
 
-style.at {
-  color: color(display-p3 0.42 0.443 0.447);
-  font-weight: bold;
-}
-
-style.selector.simple.unknown,
-style.selector.element,
+style.at-rule.import,
+style.string,
 style.selector.identifier.id,
-style.selector.identifier.class,
-style.selector.pseudoclass,
-style.selector.pseudoelement {
-  color: color(display-p3 0.227 0.518 0.533);
-}
-
-style.attribute.name,
-style.operator {
-  color: color(display-p3 0.184 0.196 0.2);
-}
-
-style.value.number,
-style.value.color.hex,
-style.value.keyword,
-style.value.color.named {
-  color: color(display-p3 0.765 0.357 0.173);
+style.selector.identifier.class {
+  color: hsla(220, 35%, 55%, 1);
   font-weight: 400;
 }
 
-style.value.identifier.function,
-css.style.attribute.value,
-scss.style.attribute-list,
-scss.style.rule {
-  color: color(display-p3 0.42 0.443 0.447);
+style.selector.simple.unknown {
+  color: hsla(174, 35%, 48%, 1);
+  font-weight: 400;
+}
+
+style.attribute.name,
+css.style.rule {
+}
+
+style.selector.element {
+  color: hsla(174, 35%, 48%, 1);
+  font-weight: 400;
+}
+
+style.selector.pseudoclass,
+style.selector.pseudoelement {
+  color: hsla(203, 36%, 42%, 1);
+  font-weight: 200;
+}
+
+style.value.color.hex,
+style.value.color.named {
+  color: hsla(358, 40%, 60%, 1);
   font-weight: 100;
 }
 
-style.attribute-list.brackete,
-style.selector.separator,
-style.attribute.separator {
-  color: color(display-p3 0.51 0.541 0.549);
+style.value.keyword {
+  color: hsla(316, 28%, 53%, 1);
+  font-weight: 100;
+}
+
+style.value.keyword.important {
+  color: hsl(15, 75%, 48%);
+  font-weight: 100;
 }
 
 style.variable-definition.identifier.variable.name,
 style.value.identifier.variable {
-  color: color(display-p3 0.922 0.69 0.239);
-  font-weight: 500;
-}
-
-style.value.keyword.important {
-  color: color(display-p3 0.706 0.18 0.212);
-}
-
-style.value.number.unit {
-  color: color(display-p3 0.941 0.576 0.396);
-}
-
-style.at-rule.import,
-style.string {
-  color: color(display-p3 0.322 0.518 0.749);
+  color: hsla(40, 100%, 38%, 1);
   font-weight: 400;
 }
 
