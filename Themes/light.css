@@ -60,6 +60,8 @@ meta.textfield.highlighted {
   border: hsla(0, 0%, 75%, 0.5);
 }
 
+/* TODO: Adjuyst syntax styles for light mode */
+
 /* text editing ui */
 
 meta.document.button {
@@ -164,8 +166,6 @@ style.attribute.separator {
   color: hsla(0, 0%, 8%, 0.5);
   font-weight: 100;
 }
-
-/* TODO: Color for invalid */
 
 style.value.keyword.important,
 javascript.operator {

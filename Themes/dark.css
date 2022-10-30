@@ -27,9 +27,9 @@ meta.button {
 }
 
 meta.button.highlighted {
-  border: color(display-p3 0.369 0.369 0.369 / 0.25);
-  background: color(display-p3 0.369 0.369 0.369 / 0.25);
-  color: color(display-p3 0.91 0.91 0.91 / 0.8);
+  border: hsla(0, 0%, 37%, 0.25);
+  background: hsla(0, 0%, 37%, 0.25);
+  color: hsla(360, 0%, 91%, 0.8);
 }
 
 meta.button.selected {
@@ -39,9 +39,9 @@ meta.button.selected {
 }
 
 meta.button.disabled {
-  border: color(display-p3 0.369 0.369 0.369 / 0);
-  background: color(display-p3 0.369 0.369 0.369 / 0);
-  color: color(display-p3 0.91 0.91 0.91 / 0.3);
+  border: hsla(0, 0%, 37%, 0);
+  background: hsla(0, 0%, 37%, 0);
+  color: hsla(360, 0%, 91%, 0.3);
 }
 
 meta.textfield {
@@ -56,27 +56,27 @@ meta.textfield.highlighted {
 /* text editing ui */
 
 meta.document.button {
-  border: color(display-p3 0.369 0.369 0.369 / 1);
-  background: color(display-p3 0.369 0.369 0.369 / 0);
+  border: hsla(0, 0%, 37%, 1);
+  background: hsla(0, 0%, 37%, 0);
   color: hsla(359, 0%, 87%, 1);
 }
 
 meta.document.button.highlighted {
-  border: color(display-p3 0.369 0.369 0.369 / 1);
-  background: color(display-p3 0.369 0.369 0.369 / 0.4);
+  border: hsla(0, 0%, 37%, 1);
+  background: hsla(0, 0%, 37%, 0.4);
   color: hsla(359, 0%, 100%, 1);
 }
 
 meta.document.button.selected {
-  border: color(display-p3 0.369 0.369 0.369 / 1);
-  background: color(display-p3 0.369 0.369 0.369 / 0);
+  border: hsla(0, 0%, 37%, 1);
+  background: hsla(0, 0%, 37%, 0);
   color: hsl(17, 82%, 64%);
 }
 
 meta.document.button.disabled {
-  border: color(display-p3 0.369 0.369 0.369 / 1);
-  background: color(display-p3 0.369 0.369 0.369 / 0);
-  color: color(display-p3 0.369 0.369 0.369 / 1);
+  border: hsla(0, 0%, 37%, 1);
+  background: hsla(0, 0%, 37%, 0);
+  color: hsla(0, 0%, 37%, 1);
 }
 
 meta.document.textfield {
@@ -89,7 +89,7 @@ meta.document.textfield.highlighted {
 }
 
 meta.document {
-  background: hsla(0, 0%, 16%, 1);
+  background: hsla(0, 0%, 13%, 1);
   border-color: hsla(0, 0%, 0%, 0);
 }
 
@@ -125,8 +125,6 @@ meta.gutter.selected {
 
 /* global syntax styles */
 
-/* TODO: Final adjustment of color tints and refactor */
-
 comment {
   color: hsla(0, 0%, 92%, 0.4);
   font-weight: 100;
@@ -156,8 +154,6 @@ style.attribute.separator {
   color: hsla(0, 0%, 92%, 0.5);
   font-weight: 100;
 }
-
-/* TODO: Color for invalid */
 
 style.value.keyword.important,
 javascript.operator {
@@ -281,7 +277,7 @@ string {
 }
 
 string.escape {
-  color: color(display-p3 0.686 0.678 0.635 / 0.5);
+  color: hsla(49, 8%, 66%, 0.5);
   font-weight: 100;
 }
 
@@ -365,8 +361,12 @@ style.value.identifier.variable {
 /* Markup */
 
 markup.heading {
+  color: hsl(15, 85%, 62%);
+  font-weight: 500;
+}
+
+markup.heading.name {
   color: hsla(0, 0%, 92%, 1);
-  font-weight: 600;
 }
 
 markup.line {
@@ -376,11 +376,16 @@ markup.line {
 
 markup.bold {
   color: hsla(0, 0%, 92%, 1);
-  font-weight: 400;
+  font-weight: 500;
+}
+
+markup.bold.asterisk {
+  color: hsla(174, 30%, 50%, 1);
+  font-weight: 500;
 }
 
 markup.italic {
-  color: hsla(0, 0%, 92%, 1);
+  color: hsla(174, 30%, 50%, 1);
   font-weight: 100;
   font-style: italic;
 }
@@ -392,8 +397,8 @@ markup.strikethrough {
 }
 
 markup.list.item {
-  color: hsla(0, 0%, 92%, 1);
-  font-weight: 300;
+  color: hsl(15, 85%, 62%);
+  font-weight: 500;
 }
 
 markup.code {
