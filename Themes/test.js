@@ -11,13 +11,6 @@ node.app("callback", function (callbackData) {
 
 // es6
 
-node.app("callback", (callbackData) => callbackData.filter())
-
-const constantVar = document.querySelector("#header")
-var nums = 10 + 10 === 20
-let str = "string"
-let bool = true || (false && 10 >= 10)
-
 if (constantVar == str) {
   obj.pop(nums)
   bool = !bool
@@ -25,6 +18,13 @@ if (constantVar == str) {
   pluckDeep(newValue)
   return newValue
 }
+
+node.app("callback", (callbackData) => callbackData.filter())
+
+const constantVar = document.querySelector("#header")
+var nums = 10 + 10 === 20
+let str = "string"
+let bool = true || (false && 10 >= 10)
 
 const pluckDeep = (key) => (obj) =>
   key.split(".").reduce((accum, key) => accum[key], obj)

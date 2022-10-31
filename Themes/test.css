@@ -6,6 +6,10 @@ $color: hsl(336, 33%, 52%);
 $color: hsl(336, 33%, 52%);
 $color: hsl(336, 33%, 52%);
 
+:root {
+  --base: "#efefef";
+}
+
 #header {
   background-color: rgba(100, 120, 100, 0.5);
   background-image: url("http://timkaechle.com/img/fux.png");
@@ -17,12 +21,12 @@ $color: hsl(336, 33%, 52%);
   color: darken($color, 5%) !important;
   background: gray;
   font-family: "SF Pro", "Arial", "Helvetica", sans-serif;
+}
 
-  :after {
-    display: block;
-    content: "";
-    box-shadow: 4px 10px;
-  }
+.header-content::after {
+  display: block;
+  content: "";
+  box-shadow: 4px 10px;
 }
 
 body,
