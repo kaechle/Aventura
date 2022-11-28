@@ -88,15 +88,13 @@ meta.document.textfield.highlighted {
   background-color: hsla(0, 0%, 15%, 1);
 }
 
-/* text editing styles */
-
 meta.document {
-  background: hsla(0, 0%, 13%, 1);
+  background-color: hsla(0, 0%, 9%, 1);
   border-color: hsla(0, 0%, 0%, 0);
 }
 
 meta.text {
-  color: hsla(0, 0%, 80%, 1);
+  color: hsla(0, 0%, 100%, 1);
 }
 
 meta.text.invisible {

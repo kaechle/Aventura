@@ -1,0 +1,381 @@
+meta {
+  -theme-display-name: "Bossa Nova Daybreak";
+  -theme-interface-style: light;
+  -theme-vibrancy: vibrant;
+  -theme-accent-color: true;
+}
+
+/* window */
+
+meta.window {
+  background: hsla(0, 0%, 94%, 1);
+  border: hsla(0, 0%, 70%, 0.6);
+}
+
+meta.titlebar {
+  background: hsla(60, 0%, 99%, 1);
+  border: hsla(0, 0%, 65%, 0.75);
+  color: hsla(0, 0%, 20%, 1);
+}
+
+/* window ui */
+
+meta.button {
+  background: hsla(0, 0%, 50%, 0);
+  border: hsla(0, 0%, 50%, 0);
+  color: hsla(0, 0%, 20%, 1);
+  text-shadow: hsla(0, 0%, 0%, 0);
+}
+
+meta.button.highlighted {
+  background: hsla(0, 0%, 50%, 0.2);
+  border: hsla(0, 0%, 50%, 0.2);
+  color: hsla(0, 0%, 20%, 1);
+  text-shadow: hsla(0, 0%, 0%, 0);
+}
+
+meta.button.selected {
+  color: hsla(215, 26%, 45%, 1);
+  text-shadow: hsla(0, 0%, 0%, 0);
+}
+
+meta.button.disabled {
+  background: hsla(0, 0%, 0%, 0);
+  border: hsla(0, 0%, 0%, 0);
+  color: hsla(0, 0%, 14%, 0.24);
+  text-shadow: hsla(0, 0%, 0%, 0);
+}
+
+meta.textfield {
+  background: hsla(0, 0%, 75%, 0.22);
+  border: hsla(0, 0%, 50%, 0.3);
+}
+
+meta.textfield.highlighted {
+  background: hsla(0, 0%, 100%, 1);
+  border: hsla(0, 0%, 50%, 0.45);
+}
+
+/* text editing ui */
+
+meta.document.button {
+  background: hsla(0, 0%, 0%, 0);
+  border: hsla(0, 0%, 70%, 1);
+  color: hsla(0, 0%, 28%, 1);
+}
+
+meta.document.button.highlighted {
+  background: hsla(0, 0%, 90%, 1);
+  border: hsla(0, 0%, 69%, 1);
+  color: hsla(0, 0%, 24%, 1);
+}
+
+meta.document.button.selected {
+  background: hsla(0, 0%, 100%, 0);
+  border: hsla(0, 0%, 0%, 1);
+  color: hsla(215, 26%, 45%, 1);
+}
+
+meta.document.button.disabled {
+  background: hsla(0, 0%, 89%, 0);
+  border: hsla(0, 0%, 69%, 1);
+  color: hsla(0, 0%, 76%, 1);
+}
+
+meta.document.textfield {
+  background: hsla(0, 0%, 91%, 1);
+  border: hsla(0, 0%, 86%, 1);
+}
+
+meta.document.textfield.highlighted {
+  background: hsla(0, 0%, 100%, 1);
+  border: hsla(0, 0%, 89%, 1);
+}
+
+/* text editing styles */
+
+meta.document {
+  background: hsla(0, 0%, 97%, 1);
+  border: hsls(0, 0%, 87%, 0);
+}
+
+meta.text {
+  color: #999999;
+}
+
+meta.text.invisible {
+  color: #e7e7e7;
+}
+
+meta.text.selected {
+  background: #ebeff0;
+}
+
+meta.cursor {
+  background: #ebeff0;
+}
+
+meta.gutter {
+  color: #e7e7e7;
+}
+
+meta.gutter.selected {
+  color: hsla(0, 0%, 65%, 1);
+}
+
+/* global syntax styles */
+
+comment {
+  color: hsla(0, 0%, 80%, 1);
+}
+
+tag,
+dot,
+comma,
+bracket,
+semicolon,
+punctuation.delimiter {
+  color: hsla(0, 0%, 44%, 1);
+  font-weight: 300;
+}
+
+operator {
+  color: hsla(166, 53%, 60%, 1);
+}
+
+link {
+  /* color: #97abd8; */
+  text-decoration: underline;
+}
+
+/* keywords */
+
+keyword {
+  color: hsla(210, 42%, 51%, 1);
+  font-style: italic;
+}
+
+keyword.modifier {
+  color: hsla(220, 44%, 36%, 1);
+  font-style: italic;
+}
+
+keyword.self {
+  color: hsla(220, 44%, 36%, 1);
+  font-style: italic;
+}
+
+value.number {
+  /* color: #ef8c9e; */
+  color: hsla(358, 40%, 55%, 1);
+}
+
+value.number.unit {
+  color: hsla(0, 0%, 65%, 1);
+  font-weight: 300;
+}
+
+/* identifiers */
+
+identifier,
+identifier.name {
+  color: hsla(0, 0%, 30%, 1);
+}
+
+identifier.type {
+  color: hsla(352, 25%, 45%, 1);
+}
+
+identifier.variable.builtin {
+  color: #d35217;
+}
+
+identifier.type.constructors {
+  color: #d35217;
+}
+
+identifier.function {
+  color: hsla(180, 29%, 42%, 1);
+}
+
+identifier.argument {
+  color: hsla(197, 60%, 40%, 1);
+}
+
+identifier.method {
+  color: hsla(197, 60%, 40%, 1);
+}
+
+identifier.property,
+identifier.property.prefix {
+  color: hsla(0, 0%, 44%, 1);
+}
+
+identifier.decorator {
+  color: hsla(0, 0%, 44%, 1);
+}
+
+identifier.key {
+  color: hsla(180, 29%, 42%, 1);
+}
+
+identifier.argument.prefix {
+  color: hsla(0, 0%, 44%, 1);
+
+}
+
+/* strings */
+
+string-keyword,
+string-template,
+string {
+  color: #b46e00;
+}
+
+string.escape {
+  color: hsla(37, 25%, 65%, 1);
+}
+
+/* regex */
+
+regex {
+  color: hsla(180, 29%, 42%, 1);
+}
+
+regex.escape {
+  color: hsla(180, 20%, 64%, 1);
+}
+
+cdata {
+  color: hsla(0, 0%, 44%, 1);
+}
+
+/* definitions */
+
+definition.class.name,
+definition.type.name,
+definition.package.name,
+definition.enum.name,
+definition.union.name,
+definition.struct.name definition.property.name,
+definition.function.name,
+definition.method.name {
+  color: #929292;
+}
+
+/* tags */
+
+processing.doctype {
+  color: #929292;
+}
+
+tag.attribute.operator {
+  color: hsla(166, 53%, 60%, 1);
+}
+
+tag.name,
+tag.framework.name,
+jsx.tag.name {
+  color: hsla(180, 29%, 42%, 1);
+  font-weight: 400;
+}
+
+tag.attribute.name,
+tag.framework.attribute.name {
+  /* color: #738bc4; */
+  color: hsla(210, 33%, 48%, 1);
+  font-style: italic;
+}
+
+tag.attribute.value {
+  /* color: #cd800c; */
+  color: #b46e00;
+  font-weight: 400;
+}
+
+tag.attribute.value.link {
+  /* color: #cd800c; */
+  color: #b46e00;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+/* stylesheets */
+
+style.value.identifier.function {
+  color: hsla(180, 29%, 42%, 1);
+}
+
+style.attribute {
+  color: hsla(0, 0%, 65%, 1);
+  font-weight: 300;
+}
+
+style.attribute.name {
+  color: hsla(0, 0%, 42%, 1);
+  font-weight: 400;
+}
+
+style.at-rule.import,
+style.string,
+style.selector.identifier.id,
+style.selector.identifier.class {
+  /* color: #7788b1; */
+  color: hsla(180, 29%, 42%, 1);
+}
+
+style.selector.simple.unknown {
+  /* color: #6c9ea9; */
+  color: hsla(0, 0%, 45%, 1);
+}
+
+style.selector.element {
+  /* color: #6c9ea9; */
+  color: hsla(210, 33%, 48%, 1);
+}
+
+style.selector.pseudoclass,
+style.selector.pseudoelement {
+  /* color: #81baca; */
+  color: hsla(197, 24%, 57%, 1);
+}
+
+style.value.color.hex,
+style.value.color.named {
+  /* color: #b36d73; */
+  color: hsla(0, 0%, 40%, 1);
+}
+
+style.value.keyword {
+  /* color: #c4747a; */
+  color: hsla(352, 30%, 49%, 1);
+}
+
+style.variable-definition.identifier.variable.name,
+style.value.identifier.variable {
+  /* color: #d8673d; */
+  color: hsla(0, 0%, 40%, 1);
+}
+
+/* markup */
+
+markup.heading,
+markup.list.item {
+  /* color: #c4747a; */
+  color: hsla(0, 0%, 40%, 1);
+}
+
+markup.heading.name,
+markup.line,
+markup.bold,
+markup.strikethrough,
+markup.code,
+markup.link {
+  color: hsla(0, 0%, 40%, 1);
+}
+
+markup.bold.asterisk,
+markup.italic {
+  /* color: #73b099; */
+  color: hsla(0, 0%, 40%, 1);
+}
